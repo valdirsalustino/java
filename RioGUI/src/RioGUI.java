@@ -20,6 +20,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
+import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
@@ -30,7 +31,10 @@ public class RioGUI extends javax.swing.JFrame {
      * Creates new form RioGUI
      */
     public RioGUI() {
+        
         initComponents();
+        
+        
     }
 
     /**
@@ -45,14 +49,36 @@ public class RioGUI extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         runRioButton = new javax.swing.JButton();
         setFigurePathLabel = new javax.swing.JLabel();
-        figurePath = new javax.swing.JTextField();
-        myDalitzJPanel = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        displayJPanelJToggleButton = new javax.swing.JToggleButton();
+        rioPathTextField = new javax.swing.JTextField();
+        outputFileNameTextView = new javax.swing.JTextField();
+        numberOfSamplesTextField = new javax.swing.JTextField();
+        finalStateComboBox = new javax.swing.JComboBox<>();
+        finalSateLabel = new javax.swing.JLabel();
+        numberOfEventsTextField = new javax.swing.JTextField();
+        numberOfEventsLabel = new javax.swing.JLabel();
+        numberOfSamplesLabel = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        seedTypeLabel = new javax.swing.JLabel();
+        isGaussianLabel = new javax.swing.JLabel();
+        deltaOrGaussianComboBox = new javax.swing.JComboBox<>();
+        imaginaryOrRealLabel = new javax.swing.JLabel();
+        imaginaryOrRealComboBox = new javax.swing.JComboBox<>();
+        ressonancesLabel = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        numberOrRessonancesSpinner = new javax.swing.JSpinner();
+        ressonance1Label = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        ressonance1ComboBox = new javax.swing.JComboBox<>();
+        ressonance2Label = new javax.swing.JLabel();
+        ressonance2ComboBox = new javax.swing.JComboBox<>();
+        ressonance3Label = new javax.swing.JLabel();
+        ressonance3ComboBox = new javax.swing.JComboBox<>();
 
         jLabel1.setText("jLabel1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Rio + GUI");
 
         runRioButton.setText("run Rio+");
         runRioButton.addActionListener(new java.awt.event.ActionListener() {
@@ -61,49 +87,64 @@ public class RioGUI extends javax.swing.JFrame {
             }
         });
 
-        setFigurePathLabel.setText("Set figure path");
+        setFigurePathLabel.setText("Set here the path of the root dir of Rio+");
+        setFigurePathLabel.setToolTipText("Type here the path of Rio+ root directory. This directory should have the content: fit, fractions, GenFit, src and toy.");
 
-        figurePath.setText("/home/valdir/Documents/git/java/myProjects/javaText.png");
-        figurePath.addActionListener(new java.awt.event.ActionListener() {
+        outputFileNameTextView.setText("testNtuple");
+        outputFileNameTextView.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                figurePathActionPerformed(evt);
+                outputFileNameTextViewActionPerformed(evt);
             }
         });
 
-        myDalitzJPanel.setBackground(new java.awt.Color(249, 246, 145));
-        myDalitzJPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        myDalitzJPanel.setMaximumSize(new java.awt.Dimension(1000, 1000));
+        numberOfSamplesTextField.setText("1");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("/home/valdir/Documents/git/java/myProjects/javaText.png")); // NOI18N
-
-        javax.swing.GroupLayout myDalitzJPanelLayout = new javax.swing.GroupLayout(myDalitzJPanel);
-        myDalitzJPanel.setLayout(myDalitzJPanelLayout);
-        myDalitzJPanelLayout.setHorizontalGroup(
-            myDalitzJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, myDalitzJPanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel3)
-                .addGap(434, 434, 434))
-        );
-        myDalitzJPanelLayout.setVerticalGroup(
-            myDalitzJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(myDalitzJPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(29, Short.MAX_VALUE))
-        );
-
-        displayJPanelJToggleButton.setText("Display");
-        displayJPanelJToggleButton.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                displayJPanelJToggleButtonStateChanged(evt);
-            }
-        });
-        displayJPanelJToggleButton.addActionListener(new java.awt.event.ActionListener() {
+        finalStateComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "kkk", "kkpi", "kpipi", "pipipi" }));
+        finalStateComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                displayJPanelJToggleButtonActionPerformed(evt);
+                finalStateComboBoxActionPerformed(evt);
             }
         });
+
+        finalSateLabel.setText("Insert the final state here");
+
+        numberOfEventsTextField.setText("10000");
+
+        numberOfEventsLabel.setText("Number of events to be generated");
+
+        numberOfSamplesLabel.setText("Number of samples");
+
+        jLabel2.setText("Output file name (without .root extension) ");
+
+        seedTypeLabel.setText("Using random seed!");
+
+        isGaussianLabel.setText("Mass distribution delta or a gaussian?");
+
+        deltaOrGaussianComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "delta", "gaussian" }));
+
+        imaginaryOrRealLabel.setText("Real and imaginary parts or as magnitude and phase? ");
+
+        imaginaryOrRealComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "magnitude", "real and imaginary" }));
+
+        ressonancesLabel.setText("Number of Ressonances");
+
+        numberOrRessonancesSpinner.setModel(new javax.swing.SpinnerNumberModel(1, 1, 12, 1));
+
+        ressonance1Label.setText("Ressonance 1 -");
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        ressonance1ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega  pi", "rho(1450)  pi", "f2(1270) pi", "f’2(1525) pi", "BE correlation" }));
+
+        ressonance2Label.setText("Ressonance 2 -");
+
+        ressonance2ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega  pi", "rho(1450)  pi", "f2(1270) pi", "f’2(1525) pi", "BE correlation" }));
+
+        ressonance3Label.setText("Ressonance 3 -");
+
+        ressonance3ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega  pi", "rho(1450)  pi", "f2(1270) pi", "f’2(1525) pi", "BE correlation" }));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -111,41 +152,120 @@ public class RioGUI extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(myDalitzJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(setFigurePathLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(115, 115, 115))
+                        .addComponent(runRioButton)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(346, 346, 346))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(42, 42, 42)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(12, 12, 12)
-                                .addComponent(runRioButton))
-                            .addComponent(displayJPanelJToggleButton))
-                        .addGap(0, 0, Short.MAX_VALUE))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(numberOfSamplesLabel)
+                                    .addComponent(jLabel2)
+                                    .addComponent(finalSateLabel)
+                                    .addComponent(numberOfEventsLabel)
+                                    .addComponent(seedTypeLabel)
+                                    .addComponent(isGaussianLabel)
+                                    .addComponent(imaginaryOrRealLabel)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(ressonancesLabel)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(numberOrRessonancesSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(8, 8, 8)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(numberOfEventsTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(deltaOrGaussianComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(finalStateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(numberOfSamplesTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(outputFileNameTextView, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(imaginaryOrRealComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(161, 161, 161)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(ressonance1Label)
+                                    .addComponent(ressonance2Label)
+                                    .addComponent(ressonance3Label))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(ressonance2ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(ressonance1ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(ressonance3ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(0, 0, Short.MAX_VALUE))))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(figurePath, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGap(82, 82, 82)
+                        .addComponent(rioPathTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 621, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(261, 261, 261)
+                        .addComponent(setFigurePathLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 159, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(11, 11, 11)
+                .addComponent(setFigurePathLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rioPathTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(outputFileNameTextView, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(numberOfSamplesLabel)
+                    .addComponent(numberOfSamplesTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(finalSateLabel)
+                    .addComponent(finalStateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(numberOfEventsLabel)
+                    .addComponent(numberOfEventsTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(seedTypeLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(setFigurePathLabel)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(figurePath, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(displayJPanelJToggleButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(runRioButton))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(myDalitzJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(26, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(isGaussianLabel)
+                            .addComponent(deltaOrGaussianComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(imaginaryOrRealLabel)
+                            .addComponent(imaginaryOrRealComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(ressonancesLabel)
+                            .addComponent(numberOrRessonancesSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ressonance1Label)
+                    .addComponent(ressonance1ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ressonance2Label)
+                    .addComponent(ressonance2ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ressonance3Label)
+                    .addComponent(ressonance3ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 191, Short.MAX_VALUE)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(120, 120, 120)
+                .addComponent(runRioButton)
+                .addContainerGap())
         );
 
         pack();
@@ -158,38 +278,23 @@ public class RioGUI extends javax.swing.JFrame {
         rioGuiObj.executeRio();
     }//GEN-LAST:event_runRioButtonActionPerformed
 
-    private void figurePathActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_figurePathActionPerformed
+    private void outputFileNameTextViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_outputFileNameTextViewActionPerformed
         // TODO add your handling code here:
-       String address = figurePath.getText();
-      
-       ImageIcon icon = new ImageIcon(address); 
-       JLabel label = new JLabel(icon);
-       myDalitzJPanel.add(label);
-       
-       myDalitzJPanel.setVisible(true);
-       label.setVisible(true);
-       //JOptionPane.showMessageDialog(null, label);
+    }//GEN-LAST:event_outputFileNameTextViewActionPerformed
 
-
+    private void finalStateComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_finalStateComboBoxActionPerformed
+        // TODO add your handling code here:
+        JComboBox cb = (JComboBox) evt.getSource();
+        String selectedItem = (String) cb.getSelectedItem();
         
-      
-    }//GEN-LAST:event_figurePathActionPerformed
-
-    private void displayJPanelJToggleButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_displayJPanelJToggleButtonActionPerformed
-        // TODO add your handling code here:
-
-    }//GEN-LAST:event_displayJPanelJToggleButtonActionPerformed
-
-    private void displayJPanelJToggleButtonStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_displayJPanelJToggleButtonStateChanged
-        // TODO add your handling code here:
-
-    }//GEN-LAST:event_displayJPanelJToggleButtonStateChanged
+        
+ 
+    }//GEN-LAST:event_finalStateComboBoxActionPerformed
 
     
     private void executeRio(){
         StringBuffer buffer = new StringBuffer();
         Process p;
-        
         String command = "root -l /home/valdir/Documents/tutorials/hist/hsum.C";
         try{
             p = Runtime.getRuntime().exec(command);
@@ -227,24 +332,49 @@ public class RioGUI extends javax.swing.JFrame {
         }
         //</editor-fold>
 
+        
+
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new RioGUI().setVisible(true);
+               new RioGUI().setVisible(true);  
+               new RioGUI().ressonance2Label.setVisible(false);
             }
         });
         
-
+        
         
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JToggleButton displayJPanelJToggleButton;
-    private javax.swing.JTextField figurePath;
+    private javax.swing.JComboBox<String> deltaOrGaussianComboBox;
+    private javax.swing.JLabel finalSateLabel;
+    private javax.swing.JComboBox<String> finalStateComboBox;
+    private javax.swing.JComboBox<String> imaginaryOrRealComboBox;
+    private javax.swing.JLabel imaginaryOrRealLabel;
+    private javax.swing.JLabel isGaussianLabel;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JPanel myDalitzJPanel;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JLabel numberOfEventsLabel;
+    private javax.swing.JTextField numberOfEventsTextField;
+    private javax.swing.JLabel numberOfSamplesLabel;
+    private javax.swing.JTextField numberOfSamplesTextField;
+    private javax.swing.JSpinner numberOrRessonancesSpinner;
+    private javax.swing.JTextField outputFileNameTextView;
+    private javax.swing.JComboBox<String> ressonance1ComboBox;
+    private javax.swing.JLabel ressonance1Label;
+    private javax.swing.JComboBox<String> ressonance2ComboBox;
+    private javax.swing.JLabel ressonance2Label;
+    private javax.swing.JComboBox<String> ressonance3ComboBox;
+    private javax.swing.JLabel ressonance3Label;
+    private javax.swing.JLabel ressonancesLabel;
+    private javax.swing.JTextField rioPathTextField;
     private javax.swing.JButton runRioButton;
+    private javax.swing.JLabel seedTypeLabel;
     private javax.swing.JLabel setFigurePathLabel;
     // End of variables declaration//GEN-END:variables
 
