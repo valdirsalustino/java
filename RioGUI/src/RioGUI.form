@@ -34,35 +34,52 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="runRioButton" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                  </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       <Component id="jSeparator1" min="-2" pref="50" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="346" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="numberOfSamplesLabel" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                          <Component id="finalSateLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="numberOfEventsLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="seedTypeLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="isGaussianLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="imaginaryOrRealLabel" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="numberOfSamplesLabel" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                                  <Component id="finalSateLabel" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="numberOfEventsLabel" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="seedTypeLabel" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="isGaussianLabel" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="imaginaryOrRealLabel" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="ressonancesLabel" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="numberOrRessonancesSpinner" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="ressonance1Label" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonancesLabel" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance2Label" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance3Label" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance4Label" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance5Label" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance6Label" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance7Label" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance8Label" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance9Label" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance10Label" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance11Label" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance12Label" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="numberOrRessonancesSpinner" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="runRioButton" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="ressonance11ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance7ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance8ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="numberOfEventsTextField" min="-2" pref="92" max="-2" attributes="0"/>
                                   <Component id="deltaOrGaussianComboBox" min="-2" max="-2" attributes="0"/>
                                   <Component id="finalStateComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -71,24 +88,19 @@
                                   <Component id="imaginaryOrRealComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jComboBox1" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jComboBox2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance1ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance2ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance3ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance4ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance5ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance6ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance9ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance10ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance12ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="161" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="ressonance1Label" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ressonance2Label" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ressonance3Label" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="ressonance2ComboBox" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ressonance1ComboBox" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ressonance3ComboBox" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -103,7 +115,7 @@
                       <Component id="setFigurePathLabel" min="-2" pref="265" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="0" pref="159" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="83" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -136,7 +148,7 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="seedTypeLabel" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -148,35 +160,86 @@
                           <Component id="imaginaryOrRealLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="imaginaryOrRealComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="20" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="jComboBox1" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jComboBox2" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="ressonancesLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="numberOrRessonancesSpinner" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <Component id="jComboBox1" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="jComboBox2" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Component id="runRioButton" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace pref="19" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="ressonance1Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ressonance1Label" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="ressonance1ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="ressonance2Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ressonance2Label" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="ressonance2ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="ressonance3Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ressonance3Label" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="ressonance3ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="191" max="32767" attributes="0"/>
-              <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="120" max="-2" attributes="0"/>
-              <Component id="runRioButton" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="ressonance4Label" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ressonance4ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="ressonance5Label" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ressonance5ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="ressonance6Label" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ressonance6ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="ressonance7Label" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ressonance7ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="ressonance8Label" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ressonance8ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="ressonance9Label" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ressonance9ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="ressonance10Label" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ressonance10ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="ressonance11Label" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ressonance11ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="ressonance12Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ressonance12ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="8" max="32767" attributes="0"/>
+              <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -308,6 +371,9 @@
           <SpinnerModel initial="1" maximum="12" minimum="1" numberType="java.lang.Integer" stepSize="1" type="number"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="numberOrRessonancesSpinnerStateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="ressonance1Label">
       <Properties>
@@ -403,6 +469,267 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JComboBox" name="ressonance3ComboBox">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="13">
+            <StringItem index="0" value="select"/>
+            <StringItem index="1" value="f0(980) pi"/>
+            <StringItem index="2" value="f0(X) pi"/>
+            <StringItem index="3" value="f0(1500) pi"/>
+            <StringItem index="4" value="f0(1710) pi"/>
+            <StringItem index="5" value="3pi NR"/>
+            <StringItem index="6" value="pipi_SW NR"/>
+            <StringItem index="7" value="rho(770) pi"/>
+            <StringItem index="8" value="omega  pi"/>
+            <StringItem index="9" value="rho(1450)  pi"/>
+            <StringItem index="10" value="f2(1270) pi"/>
+            <StringItem index="11" value="f&#x2019;2(1525) pi"/>
+            <StringItem index="12" value="BE correlation"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="ressonance4Label">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ressonance 4 -"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="ressonance5Label">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ressonance 5 -"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="ressonance6Label">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ressonance 6 -"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="ressonance7Label">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ressonance 7 -"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="ressonance8Label">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ressonance 8 -"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="ressonance9Label">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ressonance 9 -"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="ressonance10Label">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ressonance 10 -"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="ressonance11Label">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ressonance 11 -"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="ressonance4ComboBox">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="13">
+            <StringItem index="0" value="select"/>
+            <StringItem index="1" value="f0(980) pi"/>
+            <StringItem index="2" value="f0(X) pi"/>
+            <StringItem index="3" value="f0(1500) pi"/>
+            <StringItem index="4" value="f0(1710) pi"/>
+            <StringItem index="5" value="3pi NR"/>
+            <StringItem index="6" value="pipi_SW NR"/>
+            <StringItem index="7" value="rho(770) pi"/>
+            <StringItem index="8" value="omega  pi"/>
+            <StringItem index="9" value="rho(1450)  pi"/>
+            <StringItem index="10" value="f2(1270) pi"/>
+            <StringItem index="11" value="f&#x2019;2(1525) pi"/>
+            <StringItem index="12" value="BE correlation"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="ressonance5ComboBox">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="13">
+            <StringItem index="0" value="select"/>
+            <StringItem index="1" value="f0(980) pi"/>
+            <StringItem index="2" value="f0(X) pi"/>
+            <StringItem index="3" value="f0(1500) pi"/>
+            <StringItem index="4" value="f0(1710) pi"/>
+            <StringItem index="5" value="3pi NR"/>
+            <StringItem index="6" value="pipi_SW NR"/>
+            <StringItem index="7" value="rho(770) pi"/>
+            <StringItem index="8" value="omega  pi"/>
+            <StringItem index="9" value="rho(1450)  pi"/>
+            <StringItem index="10" value="f2(1270) pi"/>
+            <StringItem index="11" value="f&#x2019;2(1525) pi"/>
+            <StringItem index="12" value="BE correlation"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="ressonance6ComboBox">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="13">
+            <StringItem index="0" value="select"/>
+            <StringItem index="1" value="f0(980) pi"/>
+            <StringItem index="2" value="f0(X) pi"/>
+            <StringItem index="3" value="f0(1500) pi"/>
+            <StringItem index="4" value="f0(1710) pi"/>
+            <StringItem index="5" value="3pi NR"/>
+            <StringItem index="6" value="pipi_SW NR"/>
+            <StringItem index="7" value="rho(770) pi"/>
+            <StringItem index="8" value="omega  pi"/>
+            <StringItem index="9" value="rho(1450)  pi"/>
+            <StringItem index="10" value="f2(1270) pi"/>
+            <StringItem index="11" value="f&#x2019;2(1525) pi"/>
+            <StringItem index="12" value="BE correlation"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="ressonance7ComboBox">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="13">
+            <StringItem index="0" value="select"/>
+            <StringItem index="1" value="f0(980) pi"/>
+            <StringItem index="2" value="f0(X) pi"/>
+            <StringItem index="3" value="f0(1500) pi"/>
+            <StringItem index="4" value="f0(1710) pi"/>
+            <StringItem index="5" value="3pi NR"/>
+            <StringItem index="6" value="pipi_SW NR"/>
+            <StringItem index="7" value="rho(770) pi"/>
+            <StringItem index="8" value="omega  pi"/>
+            <StringItem index="9" value="rho(1450)  pi"/>
+            <StringItem index="10" value="f2(1270) pi"/>
+            <StringItem index="11" value="f&#x2019;2(1525) pi"/>
+            <StringItem index="12" value="BE correlation"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="ressonance8ComboBox">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="13">
+            <StringItem index="0" value="select"/>
+            <StringItem index="1" value="f0(980) pi"/>
+            <StringItem index="2" value="f0(X) pi"/>
+            <StringItem index="3" value="f0(1500) pi"/>
+            <StringItem index="4" value="f0(1710) pi"/>
+            <StringItem index="5" value="3pi NR"/>
+            <StringItem index="6" value="pipi_SW NR"/>
+            <StringItem index="7" value="rho(770) pi"/>
+            <StringItem index="8" value="omega  pi"/>
+            <StringItem index="9" value="rho(1450)  pi"/>
+            <StringItem index="10" value="f2(1270) pi"/>
+            <StringItem index="11" value="f&#x2019;2(1525) pi"/>
+            <StringItem index="12" value="BE correlation"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="ressonance9ComboBox">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="13">
+            <StringItem index="0" value="select"/>
+            <StringItem index="1" value="f0(980) pi"/>
+            <StringItem index="2" value="f0(X) pi"/>
+            <StringItem index="3" value="f0(1500) pi"/>
+            <StringItem index="4" value="f0(1710) pi"/>
+            <StringItem index="5" value="3pi NR"/>
+            <StringItem index="6" value="pipi_SW NR"/>
+            <StringItem index="7" value="rho(770) pi"/>
+            <StringItem index="8" value="omega  pi"/>
+            <StringItem index="9" value="rho(1450)  pi"/>
+            <StringItem index="10" value="f2(1270) pi"/>
+            <StringItem index="11" value="f&#x2019;2(1525) pi"/>
+            <StringItem index="12" value="BE correlation"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="ressonance10ComboBox">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="13">
+            <StringItem index="0" value="select"/>
+            <StringItem index="1" value="f0(980) pi"/>
+            <StringItem index="2" value="f0(X) pi"/>
+            <StringItem index="3" value="f0(1500) pi"/>
+            <StringItem index="4" value="f0(1710) pi"/>
+            <StringItem index="5" value="3pi NR"/>
+            <StringItem index="6" value="pipi_SW NR"/>
+            <StringItem index="7" value="rho(770) pi"/>
+            <StringItem index="8" value="omega  pi"/>
+            <StringItem index="9" value="rho(1450)  pi"/>
+            <StringItem index="10" value="f2(1270) pi"/>
+            <StringItem index="11" value="f&#x2019;2(1525) pi"/>
+            <StringItem index="12" value="BE correlation"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="ressonance11ComboBox">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="13">
+            <StringItem index="0" value="select"/>
+            <StringItem index="1" value="f0(980) pi"/>
+            <StringItem index="2" value="f0(X) pi"/>
+            <StringItem index="3" value="f0(1500) pi"/>
+            <StringItem index="4" value="f0(1710) pi"/>
+            <StringItem index="5" value="3pi NR"/>
+            <StringItem index="6" value="pipi_SW NR"/>
+            <StringItem index="7" value="rho(770) pi"/>
+            <StringItem index="8" value="omega  pi"/>
+            <StringItem index="9" value="rho(1450)  pi"/>
+            <StringItem index="10" value="f2(1270) pi"/>
+            <StringItem index="11" value="f&#x2019;2(1525) pi"/>
+            <StringItem index="12" value="BE correlation"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="ressonance12Label">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ressonance 12 -"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="ressonance12ComboBox">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="13">
