@@ -57,7 +57,30 @@ public class RioGUI extends javax.swing.JFrame {
         ressonance9ComboBox.setVisible(false);
         ressonance10ComboBox.setVisible(false);
         ressonance11ComboBox.setVisible(false);
-        ressonance12ComboBox.setVisible(false);        
+        ressonance12ComboBox.setVisible(false);    
+        
+        valRes_2_re_TextField.setVisible(false);
+        valRes_2_im_TextField.setVisible(false);
+        valRes_3_re_TextField.setVisible(false);
+        valRes_3_im_TextField.setVisible(false);
+        valRes_4_re_TextField.setVisible(false);
+        valRes_4_im_TextField.setVisible(false);
+        valRes_5_re_TextField.setVisible(false);
+        valRes_5_im_TextField.setVisible(false);
+        valRes_6_re_TextField.setVisible(false);
+        valRes_6_im_TextField.setVisible(false);
+        valRes_7_re_TextField.setVisible(false);
+        valRes_7_im_TextField.setVisible(false);
+        valRes_8_re_TextField.setVisible(false);
+        valRes_8_im_TextField.setVisible(false);
+        valRes_9_re_TextField.setVisible(false);
+        valRes_9_im_TextField.setVisible(false);
+        valRes_10_re_TextField.setVisible(false);
+        valRes_10_im_TextField.setVisible(false);
+        valRes_11_re_TextField.setVisible(false);
+        valRes_11_im_TextField.setVisible(false);
+        valRes_12_re_TextField.setVisible(false);
+        valRes_12_im_TextField.setVisible(false);
 
     }
 
@@ -91,8 +114,6 @@ public class RioGUI extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         numberOrRessonancesSpinner = new javax.swing.JSpinner();
         ressonance1Label = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jComboBox2 = new javax.swing.JComboBox<>();
         ressonance1ComboBox = new javax.swing.JComboBox<>();
         ressonance2Label = new javax.swing.JLabel();
         ressonance2ComboBox = new javax.swing.JComboBox<>();
@@ -116,6 +137,32 @@ public class RioGUI extends javax.swing.JFrame {
         ressonance11ComboBox = new javax.swing.JComboBox<>();
         ressonance12Label = new javax.swing.JLabel();
         ressonance12ComboBox = new javax.swing.JComboBox<>();
+        valRes_1_re_TextField = new javax.swing.JTextField();
+        valRes_1_im_TextField = new javax.swing.JTextField();
+        realLabel = new javax.swing.JLabel();
+        imaginaryLabel = new javax.swing.JLabel();
+        valRes_2_re_TextField = new javax.swing.JTextField();
+        valRes_2_im_TextField = new javax.swing.JTextField();
+        valRes_3_re_TextField = new javax.swing.JTextField();
+        valRes_3_im_TextField = new javax.swing.JTextField();
+        valRes_4_re_TextField = new javax.swing.JTextField();
+        valRes_4_im_TextField = new javax.swing.JTextField();
+        valRes_5_re_TextField = new javax.swing.JTextField();
+        valRes_5_im_TextField = new javax.swing.JTextField();
+        valRes_6_re_TextField = new javax.swing.JTextField();
+        valRes_6_im_TextField = new javax.swing.JTextField();
+        valRes_7_re_TextField = new javax.swing.JTextField();
+        valRes_7_im_TextField = new javax.swing.JTextField();
+        valRes_8_re_TextField = new javax.swing.JTextField();
+        valRes_8_im_TextField = new javax.swing.JTextField();
+        valRes_9_re_TextField = new javax.swing.JTextField();
+        valRes_9_im_TextField = new javax.swing.JTextField();
+        valRes_10_re_TextField = new javax.swing.JTextField();
+        valRes_10_im_TextField = new javax.swing.JTextField();
+        valRes_11_re_TextField = new javax.swing.JTextField();
+        valRes_11_im_TextField = new javax.swing.JTextField();
+        valRes_12_re_TextField = new javax.swing.JTextField();
+        valRes_12_im_TextField = new javax.swing.JTextField();
 
         jLabel1.setText("jLabel1");
 
@@ -179,10 +226,6 @@ public class RioGUI extends javax.swing.JFrame {
 
         ressonance1Label.setText("Ressonance 1 -");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
         ressonance1ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega  pi", "rho(1450)  pi", "f2(1270) pi", "f’2(1525) pi", "BE correlation" }));
 
         ressonance2Label.setText("Ressonance 2 -");
@@ -229,6 +272,68 @@ public class RioGUI extends javax.swing.JFrame {
 
         ressonance12ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega  pi", "rho(1450)  pi", "f2(1270) pi", "f’2(1525) pi", "BE correlation" }));
 
+        valRes_1_re_TextField.setText("0.2");
+
+        valRes_1_im_TextField.setText("0.4");
+
+        realLabel.setText("Real");
+
+        imaginaryLabel.setText("Imaginary");
+
+        valRes_2_re_TextField.setText("0");
+
+        valRes_2_im_TextField.setText("0");
+
+        valRes_3_re_TextField.setText("0");
+
+        valRes_3_im_TextField.setText("0");
+
+        valRes_4_re_TextField.setText("0");
+
+        valRes_4_im_TextField.setText("0");
+
+        valRes_5_re_TextField.setText("0");
+
+        valRes_5_im_TextField.setText("0");
+
+        valRes_6_re_TextField.setText("0");
+        valRes_6_re_TextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                valRes_6_re_TextFieldActionPerformed(evt);
+            }
+        });
+
+        valRes_6_im_TextField.setText("0");
+
+        valRes_7_re_TextField.setText("0");
+
+        valRes_7_im_TextField.setText("0");
+        valRes_7_im_TextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                valRes_7_im_TextFieldActionPerformed(evt);
+            }
+        });
+
+        valRes_8_re_TextField.setText("0");
+
+        valRes_8_im_TextField.setText("0");
+
+        valRes_9_re_TextField.setText("0");
+
+        valRes_9_im_TextField.setText("0");
+
+        valRes_10_re_TextField.setText("0");
+
+        valRes_10_im_TextField.setText("0");
+
+        valRes_11_re_TextField.setText("0");
+
+        valRes_11_im_TextField.setText("0");
+
+        valRes_12_re_TextField.setText("0");
+
+        valRes_12_im_TextField.setText("0");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -266,14 +371,11 @@ public class RioGUI extends javax.swing.JFrame {
                                     .addComponent(ressonance12Label))
                                 .addGap(18, 18, 18)
                                 .addComponent(numberOrRessonancesSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(runRioButton)
-                                .addGap(41, 41, 41))
                             .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(ressonance1ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(ressonance11ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(ressonance7ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(ressonance8ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -282,10 +384,6 @@ public class RioGUI extends javax.swing.JFrame {
                                     .addComponent(finalStateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(numberOfSamplesTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(outputFileNameTextView, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(imaginaryOrRealComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(ressonance1ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(ressonance2ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(ressonance3ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(ressonance4ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -294,7 +392,55 @@ public class RioGUI extends javax.swing.JFrame {
                                     .addComponent(ressonance9ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(ressonance10ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(ressonance12ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
+                                .addGap(35, 35, 35)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(valRes_1_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(realLabel)
+                                            .addComponent(valRes_2_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(valRes_3_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(41, 41, 41)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(valRes_3_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(imaginaryLabel)
+                                            .addComponent(valRes_1_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(valRes_2_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                            .addComponent(valRes_6_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(valRes_6_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(valRes_5_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(valRes_5_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(valRes_4_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(41, 41, 41)
+                                            .addComponent(valRes_4_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(valRes_7_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(valRes_8_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(valRes_9_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(valRes_10_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(valRes_11_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(valRes_12_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(41, 41, 41)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(valRes_12_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(valRes_11_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(valRes_10_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(valRes_9_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(valRes_8_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(valRes_7_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(imaginaryOrRealComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(runRioButton)
+                                .addGap(51, 51, 51))))))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -303,8 +449,11 @@ public class RioGUI extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(261, 261, 261)
                         .addComponent(setFigurePathLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 83, Short.MAX_VALUE))
+                .addGap(0, 84, Short.MAX_VALUE))
         );
+
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {valRes_10_im_TextField, valRes_10_re_TextField, valRes_11_im_TextField, valRes_11_re_TextField, valRes_12_im_TextField, valRes_12_re_TextField, valRes_1_im_TextField, valRes_1_re_TextField, valRes_2_im_TextField, valRes_2_re_TextField, valRes_3_im_TextField, valRes_3_re_TextField, valRes_4_im_TextField, valRes_4_re_TextField, valRes_5_im_TextField, valRes_5_re_TextField, valRes_6_im_TextField, valRes_6_re_TextField, valRes_7_im_TextField, valRes_7_re_TextField, valRes_8_im_TextField, valRes_8_re_TextField, valRes_9_im_TextField, valRes_9_re_TextField});
+
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
@@ -331,75 +480,93 @@ public class RioGUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(seedTypeLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(isGaussianLabel)
-                            .addComponent(deltaOrGaussianComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(imaginaryOrRealLabel)
-                            .addComponent(imaginaryOrRealComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(ressonancesLabel)
-                            .addComponent(numberOrRessonancesSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(7, 7, 7)
-                        .addComponent(runRioButton)))
-                .addGap(8, 8, 8)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(isGaussianLabel)
+                    .addComponent(deltaOrGaussianComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(imaginaryOrRealLabel)
+                    .addComponent(imaginaryOrRealComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(runRioButton))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ressonancesLabel)
+                    .addComponent(numberOrRessonancesSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(realLabel)
+                    .addComponent(imaginaryLabel))
+                .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ressonance1Label)
-                    .addComponent(ressonance1ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ressonance1ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_1_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_1_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ressonance2Label)
-                    .addComponent(ressonance2ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ressonance2ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_2_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_2_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ressonance3Label)
-                    .addComponent(ressonance3ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ressonance3ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_3_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_3_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ressonance4Label)
-                    .addComponent(ressonance4ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ressonance4ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_4_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_4_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ressonance5Label)
-                    .addComponent(ressonance5ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ressonance5ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_5_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_5_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ressonance6Label)
-                    .addComponent(ressonance6ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ressonance6ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_6_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_6_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ressonance7Label)
-                    .addComponent(ressonance7ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ressonance7ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_7_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_7_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ressonance8Label)
-                    .addComponent(ressonance8ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ressonance8ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_8_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_8_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ressonance9Label)
-                    .addComponent(ressonance9ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ressonance9ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_9_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_9_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ressonance10Label)
-                    .addComponent(ressonance10ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ressonance10ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_10_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_10_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ressonance11Label)
-                    .addComponent(ressonance11ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ressonance11ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_11_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_11_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ressonance12Label)
-                    .addComponent(ressonance12ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                    .addComponent(ressonance12ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_12_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valRes_12_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(19, 19, 19))
         );
@@ -411,9 +578,28 @@ public class RioGUI extends javax.swing.JFrame {
 
     private void runRioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_runRioButtonActionPerformed
         // TODO add your handling code here:
-        //RioGUI rioGuiObj = new RioGUI();
-        new RioGUI().executeRio();
-        //rioGuiObj.executeRio();
+        
+        new RioGUI().executeRio(
+                (String) outputFileNameTextView.getText(),
+                (String) numberOfSamplesTextField.getText(),
+                (String) numberOfEventsTextField.getText(),
+                (String) finalStateComboBox.getSelectedItem(), 
+                (String) deltaOrGaussianComboBox.getSelectedItem(),
+                (String) imaginaryOrRealComboBox.getSelectedItem(),
+                //Starting Ressonances,
+                (String) ressonance1ComboBox.getSelectedItem(),  (boolean) ressonance1ComboBox.isVisible(),  (String) valRes_1_re_TextField.getText(),  (String) valRes_1_im_TextField.getText(),
+                (String) ressonance2ComboBox.getSelectedItem(),  (boolean) ressonance2ComboBox.isVisible(),  (String) valRes_2_re_TextField.getText(),  (String) valRes_2_im_TextField.getText(),
+                (String) ressonance3ComboBox.getSelectedItem(),  (boolean) ressonance3ComboBox.isVisible(),  (String) valRes_3_re_TextField.getText(),  (String) valRes_3_im_TextField.getText(),
+                (String) ressonance4ComboBox.getSelectedItem(),  (boolean) ressonance4ComboBox.isVisible(),  (String) valRes_4_re_TextField.getText(),  (String) valRes_4_im_TextField.getText(),
+                (String) ressonance5ComboBox.getSelectedItem(),  (boolean) ressonance5ComboBox.isVisible(),  (String) valRes_5_re_TextField.getText(),  (String) valRes_5_im_TextField.getText(),
+                (String) ressonance6ComboBox.getSelectedItem(),  (boolean) ressonance6ComboBox.isVisible(),  (String) valRes_6_re_TextField.getText(),  (String) valRes_6_im_TextField.getText(),
+                (String) ressonance7ComboBox.getSelectedItem(),  (boolean) ressonance7ComboBox.isVisible(),  (String) valRes_7_re_TextField.getText(),  (String) valRes_7_im_TextField.getText(),
+                (String) ressonance8ComboBox.getSelectedItem(),  (boolean) ressonance8ComboBox.isVisible(),  (String) valRes_8_re_TextField.getText(),  (String) valRes_8_im_TextField.getText(),
+                (String) ressonance9ComboBox.getSelectedItem(),  (boolean) ressonance9ComboBox.isVisible(),  (String) valRes_9_re_TextField.getText(),  (String) valRes_9_im_TextField.getText(),
+                (String) ressonance10ComboBox.getSelectedItem(), (boolean) ressonance10ComboBox.isVisible(), (String) valRes_10_re_TextField.getText(), (String) valRes_10_im_TextField.getText(),
+                (String) ressonance11ComboBox.getSelectedItem(), (boolean) ressonance11ComboBox.isVisible(), (String) valRes_11_re_TextField.getText(), (String) valRes_11_im_TextField.getText(),
+                (String) ressonance12ComboBox.getSelectedItem(), (boolean) ressonance12ComboBox.isVisible(), (String) valRes_12_re_TextField.getText(), (String) valRes_12_im_TextField.getText()
+        );        
     }//GEN-LAST:event_runRioButtonActionPerformed
 
     private void outputFileNameTextViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_outputFileNameTextViewActionPerformed
@@ -437,111 +623,399 @@ public class RioGUI extends javax.swing.JFrame {
         if(resNumber == 2){
             ressonance2Label.setVisible(true);
             ressonance2ComboBox.setVisible(true);
+            valRes_2_re_TextField.setVisible(true);
+            valRes_2_im_TextField.setVisible(true);
         }else if (resNumber < 2) {
             ressonance2Label.setVisible(false);
             ressonance2ComboBox.setVisible(false);
+            valRes_2_re_TextField.setVisible(false);
+            valRes_2_im_TextField.setVisible(false);
         }
         if(resNumber == 3){
             ressonance3Label.setVisible(true);
             ressonance3ComboBox.setVisible(true);
+            valRes_3_re_TextField.setVisible(true);
+            valRes_3_im_TextField.setVisible(true);
         }else if (resNumber < 3) {
             ressonance3Label.setVisible(false);
             ressonance3ComboBox.setVisible(false);
+            valRes_3_re_TextField.setVisible(false);
+            valRes_3_im_TextField.setVisible(false);
         }
         if(resNumber == 4){
             ressonance4Label.setVisible(true);
             ressonance4ComboBox.setVisible(true);
+            valRes_4_re_TextField.setVisible(true);
+            valRes_4_im_TextField.setVisible(true);
         }else if (resNumber < 4) {
             ressonance4Label.setVisible(false);
             ressonance4ComboBox.setVisible(false);
+            valRes_4_re_TextField.setVisible(false);
+            valRes_4_im_TextField.setVisible(false);
         }
         if(resNumber == 5){
             ressonance5Label.setVisible(true);
             ressonance5ComboBox.setVisible(true);
+            valRes_5_re_TextField.setVisible(true);
+            valRes_5_im_TextField.setVisible(true);
         }else if (resNumber < 5) {
             ressonance5Label.setVisible(false);
             ressonance5ComboBox.setVisible(false);
+            valRes_5_re_TextField.setVisible(false);
+            valRes_5_im_TextField.setVisible(false);
         }
         if(resNumber == 6){
             ressonance6Label.setVisible(true);
             ressonance6ComboBox.setVisible(true);
+            valRes_6_re_TextField.setVisible(true);
+            valRes_6_im_TextField.setVisible(true);
         }else if (resNumber < 6) {
             ressonance6Label.setVisible(false);
             ressonance6ComboBox.setVisible(false);
+            valRes_6_re_TextField.setVisible(false);
+            valRes_6_im_TextField.setVisible(false);
         }
         if(resNumber == 7){
             ressonance7Label.setVisible(true);
             ressonance7ComboBox.setVisible(true);
+            valRes_7_re_TextField.setVisible(true);
+            valRes_7_im_TextField.setVisible(true);
         }else if (resNumber < 7) {
             ressonance7Label.setVisible(false);
             ressonance7ComboBox.setVisible(false);
+            valRes_7_re_TextField.setVisible(false);
+            valRes_7_im_TextField.setVisible(false);
         }
         if(resNumber == 8){
             ressonance8Label.setVisible(true);
             ressonance8ComboBox.setVisible(true);
+            valRes_8_re_TextField.setVisible(true);
+            valRes_8_im_TextField.setVisible(true);
         }else if (resNumber < 8) {
             ressonance8Label.setVisible(false);
             ressonance8ComboBox.setVisible(false);
+            valRes_8_re_TextField.setVisible(false);
+            valRes_8_im_TextField.setVisible(false);
         }
         if(resNumber == 9){
             ressonance9Label.setVisible(true);
             ressonance9ComboBox.setVisible(true);
+            valRes_9_re_TextField.setVisible(true);
+            valRes_9_im_TextField.setVisible(true);
         }else if (resNumber < 9) {
             ressonance9Label.setVisible(false);
             ressonance9ComboBox.setVisible(false);
+            valRes_9_re_TextField.setVisible(false);
+            valRes_9_im_TextField.setVisible(false);
         }
         if(resNumber == 10){
             ressonance10Label.setVisible(true);
             ressonance10ComboBox.setVisible(true);
+            valRes_10_re_TextField.setVisible(true);
+            valRes_10_im_TextField.setVisible(true);
         }else if (resNumber < 10) {
             ressonance10Label.setVisible(false);
             ressonance10ComboBox.setVisible(false);
+            valRes_10_re_TextField.setVisible(false);
+            valRes_10_im_TextField.setVisible(false);
         }
         if(resNumber == 11){
             ressonance11Label.setVisible(true);
             ressonance11ComboBox.setVisible(true);
+            valRes_11_re_TextField.setVisible(true);
+            valRes_11_im_TextField.setVisible(true);
         }else if (resNumber < 11) {
             ressonance11Label.setVisible(false);
             ressonance11ComboBox.setVisible(false);
+            valRes_11_re_TextField.setVisible(false);
+            valRes_11_im_TextField.setVisible(false);
         }
         if(resNumber == 12){
             ressonance12Label.setVisible(true);
             ressonance12ComboBox.setVisible(true);
+            valRes_12_re_TextField.setVisible(true);
+            valRes_12_im_TextField.setVisible(true);
+            
         }else if (resNumber < 12) {
             ressonance12Label.setVisible(false);
             ressonance12ComboBox.setVisible(false);
+            valRes_12_re_TextField.setVisible(false);
+            valRes_12_im_TextField.setVisible(false);
         }
     }//GEN-LAST:event_numberOrRessonancesSpinnerStateChanged
 
+    private void valRes_6_re_TextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_valRes_6_re_TextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_valRes_6_re_TextFieldActionPerformed
+
+    private void valRes_7_im_TextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_valRes_7_im_TextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_valRes_7_im_TextFieldActionPerformed
+
     
-    private void writeRioInput() throws IOException {
-        String str = "Hello";
+    private void writeRioInput(
+            String outputFileName,
+            String numberOfSamples, 
+            String numberOfEvents,
+            String finalStateSelected, 
+            String massDistribution, 
+            String realAndImaginary,
+            //From now start the ressonances,
+            String res1Name,  boolean isRes1,  String valRes1_re,  String valRes1_im, 
+            String res2Name,  boolean isRes2,  String valRes2_re,  String valRes2_im, 
+            String res3Name,  boolean isRes3,  String valRes3_re,  String valRes3_im, 
+            String res4Name,  boolean isRes4,  String valRes4_re,  String valRes4_im,
+            String res5Name,  boolean isRes5,  String valRes5_re,  String valRes5_im,
+            String res6Name,  boolean isRes6,  String valRes6_re,  String valRes6_im,
+            String res7Name,  boolean isRes7,  String valRes7_re,  String valRes7_im,
+            String res8Name,  boolean isRes8,  String valRes8_re,  String valRes8_im,
+            String res9Name,  boolean isRes9,  String valRes9_re,  String valRes9_im,
+            String res10Name, boolean isRes10, String valRes10_re, String valRes10_im,
+            String res11Name, boolean isRes11, String valRes11_re, String valRes11_im,
+            String res12Name, boolean isRes12, String valRes12_re, String valRes12_im
+    )  throws IOException {
+        String str = "";
+        
         String fileName = "/Users/valdirsalustino/Desktop/tmp/InputFileFromRioGUI.txt"; 
         try (//        BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
                 BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
-            writer.write(str);
+                str += "#Insert the input file name (without .root) \n \n";
+                str += "output_file_name                    aroot_files/"+ outputFileName + "\n\n";
+                str += "#Insert the number of samples \n \n ";
+                str += "number_of_samples                               " + numberOfSamples + "\n\n";
+                str += "#Insert the final state here. (0 = kkpi, 1 = kpipi, 2 = pipipi, 3 = KKK).\n\n";
+                if (finalStateSelected == "kkk"){ 
+                str += "final_state                                     " + 3 + "\n\n"; 
+                }
+                else if(finalStateSelected == "pipipi"){
+                str += "final_state                                     " + 2 + "\n\n"; 
+                }
+                else if(finalStateSelected == "kpipi") {
+                str += "final_state                                     " + 1 + "\n\n"; 
+                }
+                else if(finalStateSelected == "kkpi") {
+                str += "final_state                                     " + 0 + "\n\n"; 
+                }
+                
+                str +="#Insert the number of events to be generated.\n\n";
+                str +="number_of_events                                 " + numberOfEvents + "\n\n";
+                str +="#What seed should be used in the generator? (insert 0 for random seed) \n\n";
+                str +="seed                                             " + 0 +  "\n\n";
+                str +="#Would you like the mass distribution to be a delta or a gaussian? (1 for gaussian and 0 for delta)\n\n";
+                if (massDistribution == "delta"){ 
+                str += "is_gaussian                                     " + 0 + "\n\n"; 
+                }
+                else if(massDistribution == "gaussian") {
+                str += "is_gaussian                                     " + 1 + "\n\n";
+                }
+               
+                str +="#Background mass distribution represented by a linear equation. Insert Parameters. "
+                        + "WARNING: these parameters will be ignored in case delta mass distribution was chosen.\n\n";
+                str +="Bkg_par1                                     3000 # Background mass distribution parameter 1\n";
+                str +="Bkg_par2                                     2000 # Background mass distribution parameter 2\n\n";
+                
+                str +="#Would you like the resonant coefficients to be given as real and imaginary parts or as magnitude and phase? (1 for real and imaginary pats, 0 for magnitude and phase)\n\n";
+                if (realAndImaginary == "real and imaginary"){
+                    str += "real_and_imaginary                      " + 1 + "\n\n";
+                }
+                else if (realAndImaginary == "magnitude"){
+                    str += "real_and_imaginary                      " + 0 + "\n\n";
+                }
+                
+                str+="#Insert the resonant channels real and imaginary parts and set them as fix parameter or not. "
+                        + "Comment, erase or insert both real and imaginary parts fixed at 0 for the undesired "
+                        + "resonant channels.\n\n";
+                
+                
+                if(isRes1) {
+                    str+="############################################################################################################\n";
+                    str+="#### " + res1Name + "\n";
+                    res1Name = res1Name.replace("(","");
+                    res1Name = res1Name.replace(")","+");
+                    res1Name = res1Name.replace(" ","");
+                    //name += "_re";
+                    str+= res1Name+"_re"+"                     " + valRes1_re + "         #real part  \n";
+                    str+= res1Name+"_im"+"                     " + valRes1_im + "         #imaginary part. \n";
+                }
+                
+                if(isRes2) {
+                    str+="############################################################################################################\n";
+                    str+="#### " + res2Name + "\n";
+                    res2Name = res2Name.replace("(","");
+                    res2Name = res2Name.replace(")","+");
+                    res2Name = res2Name.replace(" ","");
+                    //name += "_re";
+                    str+= res2Name+"_re"+"                     " + valRes2_re + "         #real part  \n";
+                    str+= res2Name+"_im"+"                     " + valRes2_im + "         #imaginary part. \n";
+                }
+                
+                if(isRes3) {
+                    str+="############################################################################################################\n";
+                    str+="#### " + res3Name + "\n";
+                    res3Name = res3Name.replace("(","");
+                    res3Name = res3Name.replace(")","+");
+                    res3Name = res3Name.replace(" ","");
+                    //name += "_re";
+                    str+= res3Name+"_re"+"                     " + valRes3_re + "         #real part  \n";
+                    str+= res3Name+"_im"+"                     " + valRes3_im + "         #imaginary part. \n";
+                }
+                if(isRes4) {
+                    str+="############################################################################################################\n";
+                    str+="#### " + res4Name + "\n";
+                    res4Name = res4Name.replace("(","");
+                    res4Name = res4Name.replace(")","+");
+                    res4Name = res4Name.replace(" ","");
+                    //name += "_re";
+                    str+= res4Name+"_re"+"                     " + valRes4_re + "         #real part  \n";
+                    str+= res4Name+"_im"+"                     " + valRes4_im + "         #imaginary part. \n";
+                }
+                if(isRes5) {
+                    str+="############################################################################################################\n";
+                    str+="#### " + res5Name + "\n";
+                    res5Name = res5Name.replace("(","");
+                    res5Name = res5Name.replace(")","+");
+                    res5Name = res5Name.replace(" ","");
+                    //name += "_re";
+                    str+= res5Name+"_re"+"                     " + valRes5_re + "         #real part  \n";
+                    str+= res5Name+"_im"+"                     " + valRes5_im + "         #imaginary part. \n";
+                }
+                if(isRes6) {
+                    str+="############################################################################################################\n";
+                    str+="#### " + res6Name + "\n";
+                    res6Name = res6Name.replace("(","");
+                    res6Name = res6Name.replace(")","+");
+                    res6Name = res6Name.replace(" ","");
+                    //name += "_re";
+                    str+= res6Name+"_re"+"                     " + valRes6_re + "         #real part  \n";
+                    str+= res6Name+"_im"+"                     " + valRes6_im + "         #imaginary part. \n";
+                }
+                if(isRes7) {
+                    str+="############################################################################################################\n";
+                    str+="#### " + res7Name + "\n";
+                    res7Name = res7Name.replace("(","");
+                    res7Name = res7Name.replace(")","+");
+                    res7Name = res7Name.replace(" ","");
+                    //name += "_re";
+                    str+= res7Name+"_re"+"                     " + valRes7_re + "         #real part  \n";
+                    str+= res7Name+"_im"+"                     " + valRes7_im + "         #imaginary part. \n";
+                }
+                if(isRes8) {
+                    str+="############################################################################################################\n";
+                    str+="#### " + res8Name + "\n";
+                    res8Name = res8Name.replace("(","");
+                    res8Name = res8Name.replace(")","+");
+                    res8Name = res8Name.replace(" ","");
+                    //name += "_re";
+                    str+= res8Name+"_re"+"                     " + valRes8_re + "         #real part  \n";
+                    str+= res8Name+"_im"+"                     " + valRes8_im + "         #imaginary part. \n";
+                }
+                if(isRes9) {
+                    str+="############################################################################################################\n";
+                    str+="#### " + res9Name + "\n";
+                    res9Name = res9Name.replace("(","");
+                    res9Name = res9Name.replace(")","+");
+                    res9Name = res9Name.replace(" ","");
+                    //name += "_re";
+                    str+= res9Name+"_re"+"                     " + valRes9_re + "         #real part  \n";
+                    str+= res9Name+"_im"+"                     " + valRes9_im + "         #imaginary part. \n";
+                }
+                if(isRes10) {
+                    str+="############################################################################################################\n";
+                    str+="#### " + res10Name + "\n";
+                    res10Name = res10Name.replace("(","");
+                    res10Name = res10Name.replace(")","+");
+                    res10Name = res10Name.replace(" ","");
+                    //name += "_re";
+                    str+= res10Name+"_re"+"                     " + valRes10_re + "         #real part  \n";
+                    str+= res10Name+"_im"+"                     " + valRes10_im + "         #imaginary part. \n";
+                }
+                if(isRes11) {
+                    str+="############################################################################################################\n";
+                    str+="#### " + res11Name + "\n";
+                    res11Name = res11Name.replace("(","");
+                    res11Name = res11Name.replace(")","+");
+                    res11Name = res11Name.replace(" ","");
+                    //name += "_re";
+                    str+= res11Name+"_re"+"                     " + valRes11_re + "         #real part  \n";
+                    str+= res11Name+"_im"+"                     " + valRes11_im + "         #imaginary part. \n";
+                }
+                if(isRes12) {
+                    str+="############################################################################################################\n";
+                    str+="#### " + res12Name + "\n";
+                    res12Name = res12Name.replace("(","");
+                    res12Name = res12Name.replace(")","+");
+                    res12Name = res12Name.replace(" ","");
+                    //name += "_re";
+                    str+= res12Name+"_re"+"                     " + valRes12_re + "         #real part  \n";
+                    str+= res12Name+"_im"+"                     " + valRes12_im + "         #imaginary part. \n";
+                }
+                
+                
+                writer.write(str);
         }
     }
     
-    private void executeRio() {
+    private void executeRio(
+            String outputFileName,
+            String numberOfSamples,
+            String numberOfEvents,
+            String finalStateSelected, 
+            String massDistribution,
+            String realAndImaginary,
+            //starting ressonances,
+            String res1Name,  boolean isRes1,  String valRes1_re,  String valRes1_im, 
+            String res2Name,  boolean isRes2,  String valRes2_re,  String valRes2_im, 
+            String res3Name,  boolean isRes3,  String valRes3_re,  String valRes3_im, 
+            String res4Name,  boolean isRes4,  String valRes4_re,  String valRes4_im, 
+            String res5Name,  boolean isRes5,  String valRes5_re,  String valRes5_im, 
+            String res6Name,  boolean isRes6,  String valRes6_re,  String valRes6_im, 
+            String res7Name,  boolean isRes7,  String valRes7_re,  String valRes7_im, 
+            String res8Name,  boolean isRes8,  String valRes8_re,  String valRes8_im, 
+            String res9Name,  boolean isRes9,  String valRes9_re,  String valRes9_im, 
+            String res10Name, boolean isRes10, String valRes10_re, String valRes10_im, 
+            String res11Name, boolean isRes11, String valRes11_re, String valRes11_im, 
+            String res12Name, boolean isRes12, String valRes12_re, String valRes12_im 
+    ) {
         
         try {
-            new RioGUI().writeRioInput();
+            new RioGUI().writeRioInput(
+                    outputFileName,
+                    numberOfSamples,
+                    numberOfEvents,
+                    finalStateSelected,
+                    massDistribution,
+                    realAndImaginary,
+                    //starting ressonances
+                     res1Name,  isRes1,  valRes1_re,  valRes1_im, 
+                     res2Name,  isRes2,  valRes2_re,  valRes2_im, 
+                     res3Name,  isRes3,  valRes3_re,  valRes3_im, 
+                     res4Name,  isRes4,  valRes4_re,  valRes4_im, 
+                     res5Name,  isRes5,  valRes5_re,  valRes5_im, 
+                     res6Name,  isRes6,  valRes6_re,  valRes6_im, 
+                     res7Name,  isRes7,  valRes7_re,  valRes7_im, 
+                     res8Name,  isRes8,  valRes8_re,  valRes8_im, 
+                     res9Name,  isRes9,  valRes9_re,  valRes9_im, 
+                     res10Name, isRes10, valRes10_re, valRes10_im, 
+                     res11Name, isRes11, valRes11_re, valRes11_im, 
+                     res12Name, isRes12, valRes12_re, valRes12_im
+            );
         } catch (IOException ex) {
             Logger.getLogger(RioGUI.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         
-        StringBuffer buffer = new StringBuffer();
+        StringBuilder buffer = new StringBuilder();
         Process p;
-        String command = "root -l /home/valdir/Documents/tutorials/hist/hsum.C";
-        //String command = "root -l /Users/valdirsalustino/Desktop/tmp/hsum.C";
+        //String command = "/Users/valdirsalustino/Desktop/tmp/runRio.sh";
+        //String command = "open /Users/valdirsalustino/Desktop/tmp/hsum.C";
+        //String command = "root -l /home/valdir/Documents/tutorials/hist/hsum.C";
+        //String command = "/bin/bash -c root -l /Users/valdirsalustino/Desktop/tmp/hsum.C";
+        String command = "/Users/valdirsalustino/Desktop/tmp/runRio.sh";
         try{
             p = Runtime.getRuntime().exec(command);
             p.waitFor();   
             BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream()));
-        }catch (Exception e){
-            e.printStackTrace(); 
+        }catch (IOException | InterruptedException e){
         } 
         
     }
@@ -591,11 +1065,10 @@ public class RioGUI extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> deltaOrGaussianComboBox;
     private javax.swing.JLabel finalSateLabel;
     private javax.swing.JComboBox<String> finalStateComboBox;
+    private javax.swing.JLabel imaginaryLabel;
     private javax.swing.JComboBox<String> imaginaryOrRealComboBox;
     private javax.swing.JLabel imaginaryOrRealLabel;
     private javax.swing.JLabel isGaussianLabel;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JSeparator jSeparator1;
@@ -605,6 +1078,7 @@ public class RioGUI extends javax.swing.JFrame {
     private javax.swing.JTextField numberOfSamplesTextField;
     private javax.swing.JSpinner numberOrRessonancesSpinner;
     private javax.swing.JTextField outputFileNameTextView;
+    private javax.swing.JLabel realLabel;
     private javax.swing.JComboBox<String> ressonance10ComboBox;
     private javax.swing.JLabel ressonance10Label;
     private javax.swing.JComboBox<String> ressonance11ComboBox;
@@ -634,6 +1108,30 @@ public class RioGUI extends javax.swing.JFrame {
     private javax.swing.JButton runRioButton;
     private javax.swing.JLabel seedTypeLabel;
     private javax.swing.JLabel setFigurePathLabel;
+    private javax.swing.JTextField valRes_10_im_TextField;
+    private javax.swing.JTextField valRes_10_re_TextField;
+    private javax.swing.JTextField valRes_11_im_TextField;
+    private javax.swing.JTextField valRes_11_re_TextField;
+    private javax.swing.JTextField valRes_12_im_TextField;
+    private javax.swing.JTextField valRes_12_re_TextField;
+    private javax.swing.JTextField valRes_1_im_TextField;
+    private javax.swing.JTextField valRes_1_re_TextField;
+    private javax.swing.JTextField valRes_2_im_TextField;
+    private javax.swing.JTextField valRes_2_re_TextField;
+    private javax.swing.JTextField valRes_3_im_TextField;
+    private javax.swing.JTextField valRes_3_re_TextField;
+    private javax.swing.JTextField valRes_4_im_TextField;
+    private javax.swing.JTextField valRes_4_re_TextField;
+    private javax.swing.JTextField valRes_5_im_TextField;
+    private javax.swing.JTextField valRes_5_re_TextField;
+    private javax.swing.JTextField valRes_6_im_TextField;
+    private javax.swing.JTextField valRes_6_re_TextField;
+    private javax.swing.JTextField valRes_7_im_TextField;
+    private javax.swing.JTextField valRes_7_re_TextField;
+    private javax.swing.JTextField valRes_8_im_TextField;
+    private javax.swing.JTextField valRes_8_re_TextField;
+    private javax.swing.JTextField valRes_9_im_TextField;
+    private javax.swing.JTextField valRes_9_re_TextField;
     // End of variables declaration//GEN-END:variables
 
 }
