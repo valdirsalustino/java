@@ -179,6 +179,8 @@ public class RioGUI extends javax.swing.JFrame {
         setFigurePathLabel.setText("Set here the path of the root dir of Rio+");
         setFigurePathLabel.setToolTipText("Type here the path of Rio+ root directory. This directory should have the content: fit, fractions, GenFit, src and toy.");
 
+        rioPathTextField.setText("/home/valdir/Desktop/tmp/Rio+/");
+
         outputFileNameTextView.setText("testNtuple");
         outputFileNameTextView.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -226,15 +228,15 @@ public class RioGUI extends javax.swing.JFrame {
 
         ressonance1Label.setText("Ressonance 1 -");
 
-        ressonance1ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega  pi", "rho(1450)  pi", "f2(1270) pi", "f’2(1525) pi", "BE correlation" }));
+        ressonance1ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega pi", "rho(1450)  pi", "f2(1270) pi", "f2(1525) pi", "BE correlation" }));
 
         ressonance2Label.setText("Ressonance 2 -");
 
-        ressonance2ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega  pi", "rho(1450)  pi", "f2(1270) pi", "f’2(1525) pi", "BE correlation" }));
+        ressonance2ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega pi", "rho(1450) pi", "f2(1270) pi", "f2(1525) pi", "BE correlation" }));
 
         ressonance3Label.setText("Ressonance 3 -");
 
-        ressonance3ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega  pi", "rho(1450)  pi", "f2(1270) pi", "f’2(1525) pi", "BE correlation" }));
+        ressonance3ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega pi", "rho(1450) pi", "f2(1270) pi", "f2(1525) pi", "BE correlation" }));
 
         ressonance4Label.setText("Ressonance 4 -");
 
@@ -252,25 +254,25 @@ public class RioGUI extends javax.swing.JFrame {
 
         ressonance11Label.setText("Ressonance 11 -");
 
-        ressonance4ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega  pi", "rho(1450)  pi", "f2(1270) pi", "f’2(1525) pi", "BE correlation" }));
+        ressonance4ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega pi", "rho(1450) pi", "f2(1270) pi", "f2(1525) pi", "BE correlation" }));
 
-        ressonance5ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega  pi", "rho(1450)  pi", "f2(1270) pi", "f’2(1525) pi", "BE correlation" }));
+        ressonance5ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega pi", "rho(1450) pi", "f2(1270) pi", "f2(1525) pi", "BE correlation" }));
 
-        ressonance6ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega  pi", "rho(1450)  pi", "f2(1270) pi", "f’2(1525) pi", "BE correlation" }));
+        ressonance6ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega pi", "rho(1450) pi", "f2(1270) pi", "f2(1525) pi", "BE correlation" }));
 
-        ressonance7ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega  pi", "rho(1450)  pi", "f2(1270) pi", "f’2(1525) pi", "BE correlation" }));
+        ressonance7ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega pi", "rho(1450) pi", "f2(1270) pi", "f2(1525) pi", "BE correlation" }));
 
-        ressonance8ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega  pi", "rho(1450)  pi", "f2(1270) pi", "f’2(1525) pi", "BE correlation" }));
+        ressonance8ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega pi", "rho(1450) pi", "f2(1270) pi", "f2(1525) pi", "BE correlation" }));
 
-        ressonance9ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega  pi", "rho(1450)  pi", "f2(1270) pi", "f’2(1525) pi", "BE correlation" }));
+        ressonance9ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega pi", "rho(1450) pi", "f2(1270) pi", "f2(1525) pi", "BE correlation" }));
 
-        ressonance10ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega  pi", "rho(1450)  pi", "f2(1270) pi", "f’2(1525) pi", "BE correlation" }));
+        ressonance10ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega pi", "rho(1450) pi", "f2(1270) pi", "f2(1525) pi", "BE correlation" }));
 
-        ressonance11ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega  pi", "rho(1450)  pi", "f2(1270) pi", "f’2(1525) pi", "BE correlation" }));
+        ressonance11ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega pi", "rho(1450) pi", "f2(1270) pi", "f2(1525) pi", "BE correlation" }));
 
         ressonance12Label.setText("Ressonance 12 -");
 
-        ressonance12ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega  pi", "rho(1450)  pi", "f2(1270) pi", "f’2(1525) pi", "BE correlation" }));
+        ressonance12ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "select", "f0(980) pi", "f0(X) pi", "f0(1500) pi", "f0(1710) pi", "3pi NR", "pipi_SW NR", "rho(770) pi", "omega pi", "rho(1450) pi", "f2(1270) pi", "f2(1525) pi", "BE correlation" }));
 
         valRes_1_re_TextField.setText("0.2");
 
@@ -580,6 +582,7 @@ public class RioGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         new RioGUI().executeRio(
+                (String) rioPathTextField.getText(),
                 (String) outputFileNameTextView.getText(),
                 (String) numberOfSamplesTextField.getText(),
                 (String) numberOfEventsTextField.getText(),
@@ -754,6 +757,7 @@ public class RioGUI extends javax.swing.JFrame {
 
     
     private void writeRioInput(
+            String rioPath,
             String outputFileName,
             String numberOfSamples, 
             String numberOfEvents,
@@ -774,13 +778,19 @@ public class RioGUI extends javax.swing.JFrame {
             String res11Name, boolean isRes11, String valRes11_re, String valRes11_im,
             String res12Name, boolean isRes12, String valRes12_re, String valRes12_im
     )  throws IOException {
-        String str = "";
+        String str = "###########################################################\n";
+        str+="#                                                                                  \n";
+        str+="#   This file was automatically created by RioGUI, the java implementation of Rio+ \n";
+        str+="#                                                                                  \n";
+        str+="#   Please do not modify this file by hand, use the GUI instead.                   \n";
+        str+="#                                                                                  \n";
+        str+="###########################################################\n";
         
-        String fileName = "/Users/valdirsalustino/Desktop/tmp/InputFileFromRioGUI.txt"; 
+        String fileName =  rioPath + "/toy/ainputs/InputFileFromRioGUI.txt"; 
         try (//        BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
                 BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
                 str += "#Insert the input file name (without .root) \n \n";
-                str += "output_file_name                    aroot_files/"+ outputFileName + "\n\n";
+                str += "output_file_name                   "+rioPath+"/toy/aroot_files/"+ outputFileName + "\n\n";
                 str += "#Insert the number of samples \n \n ";
                 str += "number_of_samples                               " + numberOfSamples + "\n\n";
                 str += "#Insert the final state here. (0 = kkpi, 1 = kpipi, 2 = pipipi, 3 = KKK).\n\n";
@@ -827,12 +837,34 @@ public class RioGUI extends javax.swing.JFrame {
                         + "resonant channels.\n\n";
                 
                 
-                if(isRes1) {
+                if(isRes1) {                  
                     str+="############################################################################################################\n";
                     str+="#### " + res1Name + "\n";
-                    res1Name = res1Name.replace("(","");
-                    res1Name = res1Name.replace(")","+");
-                    res1Name = res1Name.replace(" ","");
+                    if(res1Name != "BE correlation" && res1Name!="rho(770) pi" && res1Name!="omega pi" && res1Name!="3pi NR" && res1Name!="pipi_SW NR"){
+                      res1Name = res1Name.replace("(","");
+                      res1Name = res1Name.replace(")","+");
+                      res1Name = res1Name.replace(" ","");
+                    }
+                    else if (res1Name == "BE correlation") {
+                        res1Name = res1Name.replace("correlation","");
+                        res1Name = res1Name.replace(" ","");
+                    }
+                    else if(res1Name=="rho(770) pi"){
+                        res1Name = res1Name.replace(" ","+");
+                        res1Name = res1Name.replace("(",""); 
+                        res1Name = res1Name.replace(")","");
+                        res1Name = res1Name.replace("770","");
+                    }
+                    else if(res1Name=="omega pi"){ 
+                        res1Name = res1Name.replace(" ","+");
+                    }
+                    else if(res1Name == "3pi NR"){
+                        res1Name = res1Name.replace(" ","_");
+                    }
+                    else if(res1Name =="pipi_SW NR"){
+                        res1Name = res1Name.replace(" ","+");
+                        res1Name = res1Name.replace("NR","pi");
+                    }
                     //name += "_re";
                     str+= res1Name+"_re"+"                     " + valRes1_re + "         #real part  \n";
                     str+= res1Name+"_im"+"                     " + valRes1_im + "         #imaginary part. \n";
@@ -841,9 +873,31 @@ public class RioGUI extends javax.swing.JFrame {
                 if(isRes2) {
                     str+="############################################################################################################\n";
                     str+="#### " + res2Name + "\n";
-                    res2Name = res2Name.replace("(","");
-                    res2Name = res2Name.replace(")","+");
-                    res2Name = res2Name.replace(" ","");
+                    if(res2Name != "BE correlation" && res2Name!="rho(770) pi" && res2Name!="omega pi" && res2Name!="3pi NR" && res2Name!="pipi_SW NR"){
+                      res2Name = res2Name.replace("(","");
+                      res2Name = res2Name.replace(")","+");
+                      res2Name = res2Name.replace(" ","");
+                    }
+                    else if (res2Name == "BE correlation") {
+                        res2Name = res2Name.replace("correlation","");
+                        res2Name = res2Name.replace(" ","");
+                    }
+                    else if(res2Name=="rho(770) pi"){
+                        res2Name = res2Name.replace(" ","+");
+                        res2Name = res2Name.replace("(",""); 
+                        res2Name = res2Name.replace(")","");
+                        res2Name = res2Name.replace("770","");
+                    }
+                   else if(res2Name=="omega pi"){ 
+                        res2Name = res2Name.replace(" ","+");
+                    }
+                    else if(res2Name == "3pi NR"){
+                        res2Name = res2Name.replace(" ","_");
+                    }
+                    else if(res2Name =="pipi_SW NR"){
+                        res2Name = res2Name.replace(" ","+");
+                        res2Name = res2Name.replace("NR","pi");
+                    }
                     //name += "_re";
                     str+= res2Name+"_re"+"                     " + valRes2_re + "         #real part  \n";
                     str+= res2Name+"_im"+"                     " + valRes2_im + "         #imaginary part. \n";
@@ -852,9 +906,31 @@ public class RioGUI extends javax.swing.JFrame {
                 if(isRes3) {
                     str+="############################################################################################################\n";
                     str+="#### " + res3Name + "\n";
-                    res3Name = res3Name.replace("(","");
-                    res3Name = res3Name.replace(")","+");
-                    res3Name = res3Name.replace(" ","");
+                    if(res3Name != "BE correlation" && res3Name!="rho(770) pi" && res3Name!="omega pi" && res3Name!="3pi NR" && res3Name!="pipi_SW NR"){
+                      res3Name = res3Name.replace("(","");
+                      res3Name = res3Name.replace(")","+");
+                      res3Name = res3Name.replace(" ","");
+                    }
+                    else if (res3Name == "BE correlation") {
+                        res3Name = res3Name.replace("correlation","");
+                        res3Name = res3Name.replace(" ","");
+                    }
+                    else if(res3Name=="rho(770) pi"){
+                        res3Name = res3Name.replace(" ","+");
+                        res3Name = res3Name.replace("(",""); 
+                        res3Name = res3Name.replace(")","");
+                        res3Name = res3Name.replace("770","");
+                    }
+                    else if(res3Name=="omega pi"){ 
+                        res3Name = res3Name.replace(" ","+");
+                    }
+                    else if(res3Name == "3pi NR"){
+                        res3Name = res3Name.replace(" ","_");
+                    }
+                    else if(res3Name =="pipi_SW NR"){
+                        res3Name = res3Name.replace(" ","+");
+                        res3Name = res3Name.replace("NR","pi");
+                    }
                     //name += "_re";
                     str+= res3Name+"_re"+"                     " + valRes3_re + "         #real part  \n";
                     str+= res3Name+"_im"+"                     " + valRes3_im + "         #imaginary part. \n";
@@ -862,9 +938,31 @@ public class RioGUI extends javax.swing.JFrame {
                 if(isRes4) {
                     str+="############################################################################################################\n";
                     str+="#### " + res4Name + "\n";
-                    res4Name = res4Name.replace("(","");
-                    res4Name = res4Name.replace(")","+");
-                    res4Name = res4Name.replace(" ","");
+                    if(res4Name != "BE correlation" && res4Name!="rho(770) pi" && res4Name!="omega pi" && res4Name!="3pi NR" && res4Name!="pipi_SW NR"){
+                      res4Name = res4Name.replace("(","");
+                      res4Name = res4Name.replace(")","+");
+                      res4Name = res4Name.replace(" ","");
+                    }
+                    else if (res4Name == "BE correlation") {
+                        res4Name = res4Name.replace("correlation","");
+                        res4Name = res4Name.replace(" ","");
+                    }
+                    else if(res4Name=="rho(770) pi"){
+                        res4Name = res4Name.replace(" ","+");
+                        res4Name = res4Name.replace("(",""); 
+                        res4Name = res4Name.replace(")","");
+                        res4Name = res4Name.replace("770","");
+                    }
+                    else if(res4Name=="omega pi"){ 
+                        res4Name = res4Name.replace(" ","+");
+                    }
+                    else if(res4Name == "3pi NR"){
+                        res4Name = res4Name.replace(" ","_");
+                    }
+		    else if(res4Name =="pipi_SW NR"){
+                        res4Name = res4Name.replace(" ","+");
+                        res4Name = res4Name.replace("NR","pi");
+                    }
                     //name += "_re";
                     str+= res4Name+"_re"+"                     " + valRes4_re + "         #real part  \n";
                     str+= res4Name+"_im"+"                     " + valRes4_im + "         #imaginary part. \n";
@@ -872,9 +970,31 @@ public class RioGUI extends javax.swing.JFrame {
                 if(isRes5) {
                     str+="############################################################################################################\n";
                     str+="#### " + res5Name + "\n";
-                    res5Name = res5Name.replace("(","");
-                    res5Name = res5Name.replace(")","+");
-                    res5Name = res5Name.replace(" ","");
+                    if(res5Name != "BE correlation" && res5Name!="rho(770) pi" && res5Name!="omega pi" && res5Name!="3pi NR" && res5Name!="pipi_SW NR"){
+                      res5Name = res5Name.replace("(","");
+                      res5Name = res5Name.replace(")","+");
+                      res5Name = res5Name.replace(" ","");
+                    }
+                    else if (res5Name == "BE correlation") {
+                        res5Name = res5Name.replace("correlation","");
+                        res5Name = res5Name.replace(" ","");
+                    }
+                    else if(res5Name=="rho(770) pi"){
+                        res5Name = res5Name.replace(" ","+");
+                        res5Name = res5Name.replace("(",""); 
+                        res5Name = res5Name.replace(")","");
+                        res5Name = res5Name.replace("770","");
+                    }
+                    else if(res5Name=="omega pi"){ 
+                        res5Name = res5Name.replace(" ","+");
+                    }
+                    else if(res5Name == "3pi NR"){
+                        res5Name = res5Name.replace(" ","_");
+                    }
+		    else if(res5Name =="pipi_SW NR"){
+                        res5Name = res5Name.replace(" ","+");
+                        res5Name = res5Name.replace("NR","pi");
+                    }
                     //name += "_re";
                     str+= res5Name+"_re"+"                     " + valRes5_re + "         #real part  \n";
                     str+= res5Name+"_im"+"                     " + valRes5_im + "         #imaginary part. \n";
@@ -882,9 +1002,31 @@ public class RioGUI extends javax.swing.JFrame {
                 if(isRes6) {
                     str+="############################################################################################################\n";
                     str+="#### " + res6Name + "\n";
-                    res6Name = res6Name.replace("(","");
-                    res6Name = res6Name.replace(")","+");
-                    res6Name = res6Name.replace(" ","");
+                    if(res6Name != "BE correlation" && res6Name!="rho(770) pi" && res6Name!="omega pi" && res6Name!="3pi NR" && res6Name!="pipi_SW NR"){
+                      res6Name = res6Name.replace("(","");
+                      res6Name = res6Name.replace(")","+");
+                      res6Name = res6Name.replace(" ","");
+                    }
+                    else if (res6Name == "BE correlation") {
+                        res6Name = res6Name.replace("correlation","");
+                        res6Name = res6Name.replace(" ","");
+                    }
+                    else if(res6Name=="rho(770) pi"){
+                        res6Name = res6Name.replace(" ","+");
+                        res6Name = res6Name.replace("(",""); 
+                        res6Name = res6Name.replace(")","");
+                        res6Name = res6Name.replace("770","");
+                    }
+                    else if(res6Name=="omega pi"){ 
+                        res6Name = res6Name.replace(" ","+");
+                    }
+                    else if(res6Name == "3pi NR"){
+                        res6Name = res6Name.replace(" ","_");
+                    }
+		    else if(res6Name =="pipi_SW NR"){
+                        res6Name = res6Name.replace(" ","+");
+                        res6Name = res6Name.replace("NR","pi");
+                    }
                     //name += "_re";
                     str+= res6Name+"_re"+"                     " + valRes6_re + "         #real part  \n";
                     str+= res6Name+"_im"+"                     " + valRes6_im + "         #imaginary part. \n";
@@ -892,9 +1034,31 @@ public class RioGUI extends javax.swing.JFrame {
                 if(isRes7) {
                     str+="############################################################################################################\n";
                     str+="#### " + res7Name + "\n";
-                    res7Name = res7Name.replace("(","");
-                    res7Name = res7Name.replace(")","+");
-                    res7Name = res7Name.replace(" ","");
+                    if(res7Name != "BE correlation" && res7Name!="rho(770) pi" && res7Name!="omega pi" && res7Name!="3pi NR" && res7Name!="pipi_SW NR"){
+                      res7Name = res7Name.replace("(","");
+                      res7Name = res7Name.replace(")","+");
+                      res7Name = res7Name.replace(" ","");
+                    }
+                    else if (res7Name == "BE correlation") {
+                        res7Name = res7Name.replace("correlation","");
+                        res7Name = res7Name.replace(" ","");
+                    }
+                    else if(res7Name=="rho(770) pi"){
+                        res7Name = res7Name.replace(" ","+");
+                        res7Name = res7Name.replace("(",""); 
+                        res7Name = res7Name.replace(")","");
+                        res7Name = res7Name.replace("770","");
+                    }
+                    else if(res7Name=="omega pi"){ 
+                        res7Name = res7Name.replace(" ","+");
+                    }
+                    else if(res7Name == "3pi NR"){
+                        res7Name = res7Name.replace(" ","_");
+                    }
+		    else if(res7Name =="pipi_SW NR"){
+                        res7Name = res7Name.replace(" ","+");
+                        res7Name = res7Name.replace("NR","pi");
+                    }
                     //name += "_re";
                     str+= res7Name+"_re"+"                     " + valRes7_re + "         #real part  \n";
                     str+= res7Name+"_im"+"                     " + valRes7_im + "         #imaginary part. \n";
@@ -902,9 +1066,31 @@ public class RioGUI extends javax.swing.JFrame {
                 if(isRes8) {
                     str+="############################################################################################################\n";
                     str+="#### " + res8Name + "\n";
-                    res8Name = res8Name.replace("(","");
-                    res8Name = res8Name.replace(")","+");
-                    res8Name = res8Name.replace(" ","");
+                    if(res8Name != "BE correlation" && res8Name!="rho(770) pi" && res8Name!="omega pi" && res8Name!="3pi NR" && res8Name!="pipi_SW NR"){
+                      res8Name = res8Name.replace("(","");
+                      res8Name = res8Name.replace(")","+");
+                      res8Name = res8Name.replace(" ","");
+                    }
+                    else if (res8Name == "BE correlation") {
+                        res8Name = res8Name.replace("correlation","");
+                        res8Name = res8Name.replace(" ","");
+                    }
+                    else if(res8Name=="rho(770) pi"){
+                        res8Name = res8Name.replace(" ","+");
+                        res8Name = res8Name.replace("(",""); 
+                        res8Name = res8Name.replace(")","");
+                        res8Name = res8Name.replace("770","");
+                    }
+                    else if(res8Name=="omega pi"){ 
+                        res8Name = res8Name.replace(" ","+");
+                    }
+                    else if(res8Name == "3pi NR"){
+			    res8Name = res8Name.replace(" ","_");
+		    }
+		    else if(res8Name =="pipi_SW NR"){
+			    res8Name = res8Name.replace(" ","+");
+                        res8Name = res8Name.replace("NR","pi");
+                    }
                     //name += "_re";
                     str+= res8Name+"_re"+"                     " + valRes8_re + "         #real part  \n";
                     str+= res8Name+"_im"+"                     " + valRes8_im + "         #imaginary part. \n";
@@ -912,9 +1098,31 @@ public class RioGUI extends javax.swing.JFrame {
                 if(isRes9) {
                     str+="############################################################################################################\n";
                     str+="#### " + res9Name + "\n";
-                    res9Name = res9Name.replace("(","");
-                    res9Name = res9Name.replace(")","+");
-                    res9Name = res9Name.replace(" ","");
+                    if(res9Name != "BE correlation" && res9Name!="rho(770) pi" && res9Name!="omega pi" && res9Name!="3pi NR" && res9Name!="pipi_SW NR"){
+                      res9Name = res9Name.replace("(","");
+                      res9Name = res9Name.replace(")","+");
+                      res9Name = res9Name.replace(" ","");
+                    }
+                    else if (res9Name == "BE correlation") {
+                        res9Name = res9Name.replace("correlation","");
+                        res9Name = res9Name.replace(" ","");
+                    }
+                    else if(res9Name=="rho(770) pi"){
+                        res9Name = res9Name.replace(" ","+");
+                        res9Name = res9Name.replace("(",""); 
+                        res9Name = res9Name.replace(")","");
+                        res9Name = res9Name.replace("770","");
+                    }
+                    else if(res9Name=="omega pi"){ 
+                        res9Name = res9Name.replace(" ","+");
+                    }
+                    else if(res9Name == "3pi NR"){
+			    res9Name = res9Name.replace(" ","_");
+		    }
+		    else if(res9Name =="pipi_SW NR"){
+                        res9Name = res9Name.replace(" ","+");
+                        res9Name = res9Name.replace("NR","pi");
+                    }
                     //name += "_re";
                     str+= res9Name+"_re"+"                     " + valRes9_re + "         #real part  \n";
                     str+= res9Name+"_im"+"                     " + valRes9_im + "         #imaginary part. \n";
@@ -922,9 +1130,31 @@ public class RioGUI extends javax.swing.JFrame {
                 if(isRes10) {
                     str+="############################################################################################################\n";
                     str+="#### " + res10Name + "\n";
-                    res10Name = res10Name.replace("(","");
-                    res10Name = res10Name.replace(")","+");
-                    res10Name = res10Name.replace(" ","");
+                    if(res10Name != "BE correlation" && res10Name!="rho(770) pi" && res10Name!="omega pi" && res10Name!="3pi NR" && res10Name!="pipi_SW NR"){
+                      res10Name = res10Name.replace("(","");
+                      res10Name = res10Name.replace(")","+");
+                      res10Name = res10Name.replace(" ","");
+                    }
+                    else if (res10Name == "BE correlation") {
+                        res10Name = res10Name.replace("correlation","");
+                        res10Name = res10Name.replace(" ","");
+                    }
+                    else if(res10Name=="rho(770) pi"){
+                        res10Name = res10Name.replace(" ","+");
+                        res10Name = res10Name.replace("(",""); 
+                        res10Name = res10Name.replace(")","");
+                        res10Name = res10Name.replace("770","");
+                    }
+                    else if(res10Name=="omega pi"){ 
+                        res10Name = res10Name.replace(" ","+");
+                    }
+                    else if(res10Name == "3pi NR"){
+			    res10Name = res10Name.replace(" ","_");
+		    }
+		    else if(res10Name =="pipi_SW NR"){
+                        res10Name = res10Name.replace(" ","+");
+                        res10Name = res10Name.replace("NR","pi");
+                    }
                     //name += "_re";
                     str+= res10Name+"_re"+"                     " + valRes10_re + "         #real part  \n";
                     str+= res10Name+"_im"+"                     " + valRes10_im + "         #imaginary part. \n";
@@ -932,9 +1162,31 @@ public class RioGUI extends javax.swing.JFrame {
                 if(isRes11) {
                     str+="############################################################################################################\n";
                     str+="#### " + res11Name + "\n";
-                    res11Name = res11Name.replace("(","");
-                    res11Name = res11Name.replace(")","+");
-                    res11Name = res11Name.replace(" ","");
+                    if(res11Name != "BE correlation" && res11Name!="rho(770) pi" && res11Name!="omega pi" && res11Name!="3pi NR" && res11Name!="pipi_SW NR"){
+                      res11Name = res11Name.replace("(","");
+                      res11Name = res11Name.replace(")","+");
+                      res11Name = res11Name.replace(" ","");
+                    }
+                    else if (res11Name == "BE correlation") {
+                        res11Name = res11Name.replace("correlation","");
+                        res11Name = res11Name.replace(" ","");
+                    }
+                    else if(res11Name=="rho(770) pi"){
+                        res11Name = res11Name.replace(" ","+");
+                        res11Name = res11Name.replace("(",""); 
+                        res11Name = res11Name.replace(")","");
+                        res11Name = res11Name.replace("770","");
+                    }
+                    else if(res11Name=="omega pi"){ 
+                        res11Name = res11Name.replace(" ","+");
+                    }
+                    else if(res11Name == "3pi NR"){
+			    res11Name = res11Name.replace(" ","_");
+		    }
+		    else if(res11Name =="pipi_SW NR"){
+                        res11Name = res11Name.replace(" ","+");
+                        res11Name = res11Name.replace("NR","pi");
+                    }
                     //name += "_re";
                     str+= res11Name+"_re"+"                     " + valRes11_re + "         #real part  \n";
                     str+= res11Name+"_im"+"                     " + valRes11_im + "         #imaginary part. \n";
@@ -942,20 +1194,81 @@ public class RioGUI extends javax.swing.JFrame {
                 if(isRes12) {
                     str+="############################################################################################################\n";
                     str+="#### " + res12Name + "\n";
-                    res12Name = res12Name.replace("(","");
-                    res12Name = res12Name.replace(")","+");
-                    res12Name = res12Name.replace(" ","");
+                    if(res12Name != "BE correlation" && res12Name!="rho(770) pi" && res12Name!="omega pi" && res12Name!="3pi NR" && res12Name!="pipi_SW NR"){
+                      res12Name = res12Name.replace("(","");
+                      res12Name = res12Name.replace(")","+");
+                      res12Name = res12Name.replace(" ","");
+                    }
+                    else if (res12Name == "BE correlation") {
+                        res12Name = res12Name.replace("correlation","");
+                        res12Name = res12Name.replace(" ","");
+                    }
+                    else if(res12Name=="rho(770) pi"){
+                        res12Name = res12Name.replace(" ","+");
+                        res12Name = res12Name.replace("(",""); 
+                        res12Name = res12Name.replace(")","");
+                        res12Name = res12Name.replace("770","");
+                    }
+                    else if(res12Name=="omega pi"){ 
+                        res12Name = res12Name.replace(" ","+");
+                    }
+                    else if(res12Name == "3pi NR"){
+			    res12Name = res12Name.replace(" ","_");
+		    }
+		    else if(res12Name =="pipi_SW NR"){
+                        res12Name = res12Name.replace(" ","+");
+                        res12Name = res12Name.replace("NR","pi");
+                    }
                     //name += "_re";
                     str+= res12Name+"_re"+"                     " + valRes12_re + "         #real part  \n";
                     str+= res12Name+"_im"+"                     " + valRes12_im + "         #imaginary part. \n";
                 }
+                str+="############################################################################################################\n\n";
                 
-                
+                str+="#Insert the coefficients for each background component. Comment, "
+                        + "erase or insert fraction fixed at 0 for the undesired background components.\n\n";
+                str+="############################################################################################################\n";
+                str+="#Random phi + pi \n";
+                str+="#Random_phi_fraction                          0.0     # fraction\n";
+                str+="#Random_phi_fix                               1       # Set as fix? (1 if yes and 0 if not)\n";
+                str+="############################################################################################################\n";
+                str+="#Random K* + K\n";
+                str+="#Random_Kstar_fraction                        0.0     # fraction\n";
+                str+="#Random_Kstar_fix                             1       # Set as fix? (1 if yes and 0 if not)\n";
+                str+="############################################################################################################\n";
+                str+="#Combinatorial\n";
+                str+="#COMBINATORIAL_fraction                       0.0     # fraction\n";
+                str+="#COMBINATORIAL_fix                            1       # Set as fix? (1 if yes and 0 if not)\n";
+                str+="############################################################################################################\n";
+                str+="#Histogram\n";
+                str+="UseBackHisto                             0\n";
+                str+="#HISTOGRAM_fraction                       1.0     # fraction\n";
+                str+="#HISTOGRAM_fix                            1       # Set as fix? (1 if yes and 0 if not)\n";
+                str+="#Back_Ntuple_Name                         /data/data2/alberto/KKK/data/ntuples/background.root\n";
+                str+="#Back_Histo_Name                          bkgp\n";
+                str+="Inform the background fraction*/\n\n";
+                str+="bkg_fraction                                 0.\n\n";
+                str+="# Input and Output PWA file names \n\n";
+                str+="number_of_pwa_bins                           1\n";
+                str+="pwa_txt_file                                 "+rioPath+"/fit/aaux/fake_pwa.txt\n";
+                str+="#output_pwa_txt_file                          output_pwa.txt\n\n";
+                str+="# Reads acceptance info\n" ;
+                str+="UseAcceptance                                  0\n";
+                str+="#Acceptance_Ntuple_Name\n" ;
+                str+="#Acceptance_Histo_Name\n\n";
+                str+="# Input for binned amplitude\n";
+                str+="number_of_binamp_bins                         323\n";
+                str+="Bin_Amp_Name                                 ../../pipi2KK/Omnes.txt\n\n\n";
+                str+="# loop integral for DD->KK amplitude\n";
+                str+="Loop_Ntuple_Name                             fit/aroot_files/DD2KK-loop.root\n";
+                str+="Loop_Histo_Name                              Amp1DRe\n";
+                                        
                 writer.write(str);
         }
     }
     
     private void executeRio(
+            String rioPath,
             String outputFileName,
             String numberOfSamples,
             String numberOfEvents,
@@ -979,6 +1292,7 @@ public class RioGUI extends javax.swing.JFrame {
         
         try {
             new RioGUI().writeRioInput(
+                    rioPath,
                     outputFileName,
                     numberOfSamples,
                     numberOfEvents,
@@ -1006,11 +1320,14 @@ public class RioGUI extends javax.swing.JFrame {
         
         StringBuilder buffer = new StringBuilder();
         Process p;
-        //String command = "/Users/valdirsalustino/Desktop/tmp/runRio.sh";
+        
+        String command = "/home/valdir/Desktop/tmp/runRio.sh";
         //String command = "open /Users/valdirsalustino/Desktop/tmp/hsum.C";
         //String command = "root -l /home/valdir/Documents/tutorials/hist/hsum.C";
         //String command = "/bin/bash -c root -l /Users/valdirsalustino/Desktop/tmp/hsum.C";
-        String command = "/Users/valdirsalustino/Desktop/tmp/runRio.sh";
+        
+        //String command = rioPath+"/toy/ToyMCGenerator " + rioPath+"/toy/ainputs/InputFileFromRioGUI.txt | tee log.txt";
+        System.out.println(" executing command : " + command);
         try{
             p = Runtime.getRuntime().exec(command);
             p.waitFor();   

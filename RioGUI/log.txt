@@ -1,0 +1,92 @@
+
+###################################################
+#                                                 #
+#             Welcome to ToyMCGenerator           #
+#                                                 #
+#                                                 #
+#       Authors: Sandra Amato, Rafael Aoude       #
+#   Carla Gobel, Josue Molina, Érica Polycarpo,   #
+#         Alberto Reis, Danielle Tostes,          #
+#                and Daniel Vieira                #
+#                                                 #
+#            contact: dvieira@if.ufrj.br          #
+#                                                 #
+#                    Have fun!                    #
+#                                                 #
+###################################################
+
+Reading input file name:/home/valdir/sw/Rio+//toy/ainputs/InputFileFromRioGUI.txt
+Output file name: /home/valdir/sw/Rio+//toy/aroot_files/testNtuple
+
+------------------------------------------------------------------------
+
+Number of events to be generated: 10000
+
+------------------------------------------------------------------------
+
+Number of samples to be generated: 1
+
+------------------------------------------------------------------------
+
+Delta Mass Distribution
+------------------------------------------------------------------------
+
+The chosen final state was pipipi
+
+------------------------------------------------------------------------
+
+Signal generation parameters: 
+
+##########################################################
+Resonant Channel    Real Part      Imaginary Part 
+##########################################################
+f01710+pi           0.2            0.4            
+##########################################################
+
+1 resonances in total
+
+------------------------------------------------------------------------
+
+Background generation parameters: 
+
+########################################
+Background Component     Fraction       
+########################################
+########################################
+
+0 background components in total
+
+------------------------------------------------------------------------
+
+Background fraction: 0
+
+------------------------------------------------------------------------
+
+
+ Fiting without Acceptance
+
+------------------------------------------------------------------------
+
+ Fiting background without histo
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+Calculating Bkg normalization
+
+BkgNorm took 0s
+------------------------------------------------------------------------
+
+Calculating the signal PDF maximum
+
+------------------------------------------------------------------------
+
+Maximum of signal PDF: 0.209601  2.94008   0.880631
+Maximum of background PDF: 0
+
+Generating sample number 0 - 10%    Generating sample number 0 - 20%    Generating sample number 0 - 30%    Generating sample number 0 - 40%    Generating sample number 0 - 50%    Generating sample number 0 - 60%    Generating sample number 0 - 70%    Generating sample number 0 - 80%    Generating sample number 0 - 90%    Generated  sample number 0 - 100%        
+
+Number of signal events generated in this sample: 10000
+Number of background events generated in this sample: 0
+

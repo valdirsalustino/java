@@ -325,6 +325,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="rioPathTextField">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="/home/valdir/Desktop/tmp/Rio+/"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="outputFileNameTextView">
       <Properties>
@@ -457,10 +460,10 @@
             <StringItem index="5" value="3pi NR"/>
             <StringItem index="6" value="pipi_SW NR"/>
             <StringItem index="7" value="rho(770) pi"/>
-            <StringItem index="8" value="omega  pi"/>
+            <StringItem index="8" value="omega pi"/>
             <StringItem index="9" value="rho(1450)  pi"/>
             <StringItem index="10" value="f2(1270) pi"/>
-            <StringItem index="11" value="f&#x2019;2(1525) pi"/>
+            <StringItem index="11" value="f2(1525) pi"/>
             <StringItem index="12" value="BE correlation"/>
           </StringArray>
         </Property>
@@ -486,10 +489,10 @@
             <StringItem index="5" value="3pi NR"/>
             <StringItem index="6" value="pipi_SW NR"/>
             <StringItem index="7" value="rho(770) pi"/>
-            <StringItem index="8" value="omega  pi"/>
-            <StringItem index="9" value="rho(1450)  pi"/>
+            <StringItem index="8" value="omega pi"/>
+            <StringItem index="9" value="rho(1450) pi"/>
             <StringItem index="10" value="f2(1270) pi"/>
-            <StringItem index="11" value="f&#x2019;2(1525) pi"/>
+            <StringItem index="11" value="f2(1525) pi"/>
             <StringItem index="12" value="BE correlation"/>
           </StringArray>
         </Property>
@@ -515,10 +518,10 @@
             <StringItem index="5" value="3pi NR"/>
             <StringItem index="6" value="pipi_SW NR"/>
             <StringItem index="7" value="rho(770) pi"/>
-            <StringItem index="8" value="omega  pi"/>
-            <StringItem index="9" value="rho(1450)  pi"/>
+            <StringItem index="8" value="omega pi"/>
+            <StringItem index="9" value="rho(1450) pi"/>
             <StringItem index="10" value="f2(1270) pi"/>
-            <StringItem index="11" value="f&#x2019;2(1525) pi"/>
+            <StringItem index="11" value="f2(1525) pi"/>
             <StringItem index="12" value="BE correlation"/>
           </StringArray>
         </Property>
@@ -579,10 +582,10 @@
             <StringItem index="5" value="3pi NR"/>
             <StringItem index="6" value="pipi_SW NR"/>
             <StringItem index="7" value="rho(770) pi"/>
-            <StringItem index="8" value="omega  pi"/>
-            <StringItem index="9" value="rho(1450)  pi"/>
+            <StringItem index="8" value="omega pi"/>
+            <StringItem index="9" value="rho(1450) pi"/>
             <StringItem index="10" value="f2(1270) pi"/>
-            <StringItem index="11" value="f&#x2019;2(1525) pi"/>
+            <StringItem index="11" value="f2(1525) pi"/>
             <StringItem index="12" value="BE correlation"/>
           </StringArray>
         </Property>
@@ -603,10 +606,10 @@
             <StringItem index="5" value="3pi NR"/>
             <StringItem index="6" value="pipi_SW NR"/>
             <StringItem index="7" value="rho(770) pi"/>
-            <StringItem index="8" value="omega  pi"/>
-            <StringItem index="9" value="rho(1450)  pi"/>
+            <StringItem index="8" value="omega pi"/>
+            <StringItem index="9" value="rho(1450) pi"/>
             <StringItem index="10" value="f2(1270) pi"/>
-            <StringItem index="11" value="f&#x2019;2(1525) pi"/>
+            <StringItem index="11" value="f2(1525) pi"/>
             <StringItem index="12" value="BE correlation"/>
           </StringArray>
         </Property>
@@ -627,10 +630,10 @@
             <StringItem index="5" value="3pi NR"/>
             <StringItem index="6" value="pipi_SW NR"/>
             <StringItem index="7" value="rho(770) pi"/>
-            <StringItem index="8" value="omega  pi"/>
-            <StringItem index="9" value="rho(1450)  pi"/>
+            <StringItem index="8" value="omega pi"/>
+            <StringItem index="9" value="rho(1450) pi"/>
             <StringItem index="10" value="f2(1270) pi"/>
-            <StringItem index="11" value="f&#x2019;2(1525) pi"/>
+            <StringItem index="11" value="f2(1525) pi"/>
             <StringItem index="12" value="BE correlation"/>
           </StringArray>
         </Property>
@@ -651,10 +654,10 @@
             <StringItem index="5" value="3pi NR"/>
             <StringItem index="6" value="pipi_SW NR"/>
             <StringItem index="7" value="rho(770) pi"/>
-            <StringItem index="8" value="omega  pi"/>
-            <StringItem index="9" value="rho(1450)  pi"/>
+            <StringItem index="8" value="omega pi"/>
+            <StringItem index="9" value="rho(1450) pi"/>
             <StringItem index="10" value="f2(1270) pi"/>
-            <StringItem index="11" value="f&#x2019;2(1525) pi"/>
+            <StringItem index="11" value="f2(1525) pi"/>
             <StringItem index="12" value="BE correlation"/>
           </StringArray>
         </Property>
@@ -675,10 +678,10 @@
             <StringItem index="5" value="3pi NR"/>
             <StringItem index="6" value="pipi_SW NR"/>
             <StringItem index="7" value="rho(770) pi"/>
-            <StringItem index="8" value="omega  pi"/>
-            <StringItem index="9" value="rho(1450)  pi"/>
+            <StringItem index="8" value="omega pi"/>
+            <StringItem index="9" value="rho(1450) pi"/>
             <StringItem index="10" value="f2(1270) pi"/>
-            <StringItem index="11" value="f&#x2019;2(1525) pi"/>
+            <StringItem index="11" value="f2(1525) pi"/>
             <StringItem index="12" value="BE correlation"/>
           </StringArray>
         </Property>
@@ -699,10 +702,10 @@
             <StringItem index="5" value="3pi NR"/>
             <StringItem index="6" value="pipi_SW NR"/>
             <StringItem index="7" value="rho(770) pi"/>
-            <StringItem index="8" value="omega  pi"/>
-            <StringItem index="9" value="rho(1450)  pi"/>
+            <StringItem index="8" value="omega pi"/>
+            <StringItem index="9" value="rho(1450) pi"/>
             <StringItem index="10" value="f2(1270) pi"/>
-            <StringItem index="11" value="f&#x2019;2(1525) pi"/>
+            <StringItem index="11" value="f2(1525) pi"/>
             <StringItem index="12" value="BE correlation"/>
           </StringArray>
         </Property>
@@ -723,10 +726,10 @@
             <StringItem index="5" value="3pi NR"/>
             <StringItem index="6" value="pipi_SW NR"/>
             <StringItem index="7" value="rho(770) pi"/>
-            <StringItem index="8" value="omega  pi"/>
-            <StringItem index="9" value="rho(1450)  pi"/>
+            <StringItem index="8" value="omega pi"/>
+            <StringItem index="9" value="rho(1450) pi"/>
             <StringItem index="10" value="f2(1270) pi"/>
-            <StringItem index="11" value="f&#x2019;2(1525) pi"/>
+            <StringItem index="11" value="f2(1525) pi"/>
             <StringItem index="12" value="BE correlation"/>
           </StringArray>
         </Property>
@@ -747,10 +750,10 @@
             <StringItem index="5" value="3pi NR"/>
             <StringItem index="6" value="pipi_SW NR"/>
             <StringItem index="7" value="rho(770) pi"/>
-            <StringItem index="8" value="omega  pi"/>
-            <StringItem index="9" value="rho(1450)  pi"/>
+            <StringItem index="8" value="omega pi"/>
+            <StringItem index="9" value="rho(1450) pi"/>
             <StringItem index="10" value="f2(1270) pi"/>
-            <StringItem index="11" value="f&#x2019;2(1525) pi"/>
+            <StringItem index="11" value="f2(1525) pi"/>
             <StringItem index="12" value="BE correlation"/>
           </StringArray>
         </Property>
@@ -776,10 +779,10 @@
             <StringItem index="5" value="3pi NR"/>
             <StringItem index="6" value="pipi_SW NR"/>
             <StringItem index="7" value="rho(770) pi"/>
-            <StringItem index="8" value="omega  pi"/>
-            <StringItem index="9" value="rho(1450)  pi"/>
+            <StringItem index="8" value="omega pi"/>
+            <StringItem index="9" value="rho(1450) pi"/>
             <StringItem index="10" value="f2(1270) pi"/>
-            <StringItem index="11" value="f&#x2019;2(1525) pi"/>
+            <StringItem index="11" value="f2(1525) pi"/>
             <StringItem index="12" value="BE correlation"/>
           </StringArray>
         </Property>
