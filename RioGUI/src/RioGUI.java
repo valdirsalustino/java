@@ -578,6 +578,23 @@ public class RioGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    public static void createBashScript(String rioPath, String bashScriptName) throws IOException {
+        System.out.println(" inside createBashScript ") ;
+
+        String str;
+        str = "#!/bin/bash\n";
+
+        String myBashFileName = rioPath + "/" + bashScriptName;
+
+        try(
+        BufferedWriter writer = new BufferedWriter(new FileWriter(myBashFileName))){
+            str += "echo  '-----> Starting bash program.sh'\n";
+            str += rioPath+"/toy/ToyMCGenerator "+rioPath+"/toy/ainputs/InputFileFromRioGUI.txt | tee log_rioGUI.txt";
+            writer.write(str);
+        }
+    }
+    
+    
     private void runRioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_runRioButtonActionPerformed
         // TODO add your handling code here:
         
@@ -1317,11 +1334,27 @@ public class RioGUI extends javax.swing.JFrame {
             Logger.getLogger(RioGUI.class.getName()).log(Level.SEVERE, null, ex);
         }
         
+        String bashScriptName = "rioGuiBashProgram.sh";
+        try {
+            RioGUI.createBashScript(rioPath, bashScriptName);
+        } catch (IOException ex) {
+            Logger.getLogger(RioGUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        String makeExecutable = "chmod 755 " +  rioPath +"/"+ bashScriptName;
+        Process proc;
+        try{
+            proc = Runtime.getRuntime().exec(makeExecutable);
+            proc.waitFor();   
+      //BufferedReader reader = new BufferedReader(new InputStreamReader(proc.getInputStream()));
+        }catch (IOException | InterruptedException e){} 
         
         StringBuilder buffer = new StringBuilder();
         Process p;
         
-        String command = "/home/valdir/Desktop/tmp/runRio.sh";
+        String command = rioPath +"/"+ bashScriptName;
+       
+        //String command = "/home/valdir/Desktop/tmp/runRio.sh";
         //String command = "open /Users/valdirsalustino/Desktop/tmp/hsum.C";
         //String command = "root -l /home/valdir/Documents/tutorials/hist/hsum.C";
         //String command = "/bin/bash -c root -l /Users/valdirsalustino/Desktop/tmp/hsum.C";

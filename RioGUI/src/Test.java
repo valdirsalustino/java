@@ -46,10 +46,8 @@ public class Test {
     try{
       proc = Runtime.getRuntime().exec(makeExecutable);
       proc.waitFor();   
-      BufferedReader reader = new BufferedReader(new InputStreamReader(proc.getInputStream()));
-    }catch (IOException | InterruptedException e){
-
-    } 
+      //BufferedReader reader = new BufferedReader(new InputStreamReader(proc.getInputStream()));
+    }catch (IOException | InterruptedException e){} 
   }
 
 }
