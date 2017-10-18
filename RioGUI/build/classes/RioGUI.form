@@ -31,236 +31,240 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="jSeparator1" min="-2" pref="50" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="346" max="-2" attributes="0"/>
-                  </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="numberOfSamplesLabel" min="-2" max="-2" attributes="0"/>
+                          <Component id="finalSateLabel" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                          <Component id="finalSateLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="numberOfSamplesLabel" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="numberOfEventsLabel" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="seedTypeLabel" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="isGaussianLabel" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="imaginaryOrRealLabel" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="ressonance1Label" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ressonancesLabel" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ressonance2Label" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ressonance3Label" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ressonance4Label" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ressonance5Label" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ressonance6Label" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ressonance7Label" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ressonance8Label" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ressonance9Label" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ressonance10Label" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ressonance11Label" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ressonance12Label" alignment="1" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="numberOrRessonancesSpinner" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="ressonancesLabel" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="numberOfEventsTextField" min="-2" pref="92" max="-2" attributes="0"/>
+                          <Component id="finalStateComboBox" min="-2" max="-2" attributes="0"/>
+                          <Component id="deltaOrGaussianComboBox" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="outputFileNameTextView" min="-2" pref="104" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="runRioButton" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="numberOfSamplesTextField" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="145" max="-2" attributes="0"/>
+                                  <Component id="seedTypeLabel" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="imaginaryOrRealComboBox" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="numberOrRessonancesSpinner" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="ressonance1ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ressonance11ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ressonance7ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ressonance8ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="numberOfEventsTextField" min="-2" pref="92" max="-2" attributes="0"/>
-                                  <Component id="deltaOrGaussianComboBox" min="-2" max="-2" attributes="0"/>
-                                  <Component id="finalStateComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="numberOfSamplesTextField" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
-                                  <Component id="outputFileNameTextView" min="-2" pref="104" max="-2" attributes="0"/>
                                   <Component id="ressonance2ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="ressonance3ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="ressonance4ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="ressonance5ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="ressonance6ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance7ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance8ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="ressonance9ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="ressonance10ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance11ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="ressonance12ComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="valRes_1_re_TextField" linkSize="3" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
-                                          <Component id="realLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="valRes_2_re_TextField" linkSize="3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="valRes_3_re_TextField" linkSize="3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="valRes_5_re_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="valRes_4_re_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="valRes_3_re_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="valRes_2_re_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="valRes_1_re_TextField" linkSize="3" min="-2" pref="54" max="-2" attributes="0"/>
+                                  <Component id="realLabel" min="-2" max="-2" attributes="0"/>
+                                  <Component id="valRes_6_re_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="valRes_7_re_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="valRes_8_re_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="valRes_9_re_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="valRes_10_re_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="valRes_11_re_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="valRes_12_re_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                              <Component id="valRes_12_im_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="110" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="ressonance3Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance4Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance5Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance6Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance7Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance8Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance9Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance10Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance11Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ressonance12Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="ressonance2Label" min="-2" max="-2" attributes="0"/>
+                                          <Component id="ressonance1Label" alignment="1" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="valRes_3_im_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="imaginaryLabel" min="-2" max="-2" attributes="0"/>
-                                          <Component id="valRes_1_im_TextField" linkSize="3" min="-2" pref="55" max="-2" attributes="0"/>
-                                          <Component id="valRes_2_im_TextField" linkSize="3" min="-2" pref="55" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="valRes_6_re_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="valRes_6_im_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" attributes="0">
-                                          <Component id="valRes_5_re_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="valRes_5_im_TextField" linkSize="3" min="-2" pref="55" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" attributes="0">
-                                          <Component id="valRes_4_re_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-                                          <Component id="valRes_4_im_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="valRes_7_re_TextField" linkSize="3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="valRes_8_re_TextField" linkSize="3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="valRes_9_re_TextField" linkSize="3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="valRes_10_re_TextField" linkSize="3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="valRes_11_re_TextField" linkSize="3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="valRes_12_re_TextField" linkSize="3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="valRes_12_im_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="valRes_11_im_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="valRes_10_im_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="valRes_9_im_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="valRes_8_im_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="valRes_7_im_TextField" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                      </Group>
+                                      <EmptySpace min="267" pref="267" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="valRes_1_im_TextField" linkSize="3" min="-2" pref="55" max="-2" attributes="0"/>
+                                  <Component id="imaginaryLabel" min="-2" max="-2" attributes="0"/>
+                                  <Component id="valRes_2_im_TextField" linkSize="3" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                                  <Component id="valRes_3_im_TextField" linkSize="3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="valRes_4_im_TextField" linkSize="3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="valRes_5_im_TextField" linkSize="3" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                                  <Component id="valRes_6_im_TextField" linkSize="3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="valRes_7_im_TextField" linkSize="3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="valRes_8_im_TextField" linkSize="3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="valRes_9_im_TextField" linkSize="3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="valRes_10_im_TextField" linkSize="3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="valRes_11_im_TextField" linkSize="3" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="imaginaryOrRealComboBox" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="runRioButton" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="rioPathTextField" min="-2" pref="621" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="setFigurePathLabel" min="-2" pref="265" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="218" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
               </Group>
-          </Group>
-          <Group type="102" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
-                      <Component id="rioPathTextField" min="-2" pref="621" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="261" max="-2" attributes="0"/>
-                      <Component id="setFigurePathLabel" min="-2" pref="265" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <EmptySpace min="0" pref="84" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
-              <Component id="setFigurePathLabel" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Component id="rioPathTextField" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="outputFileNameTextView" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="numberOfSamplesLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="numberOfSamplesTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                              <Component id="setFigurePathLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="rioPathTextField" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel2" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="runRioButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="outputFileNameTextView" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="numberOfSamplesLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="numberOfSamplesTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="seedTypeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="finalSateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="finalStateComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="numberOfEventsLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="numberOfEventsTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="isGaussianLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="deltaOrGaussianComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="imaginaryOrRealLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="imaginaryOrRealComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="ressonancesLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="numberOrRessonancesSpinner" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="realLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="imaginaryLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="ressonance1Label" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ressonance1ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="valRes_1_re_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="valRes_1_im_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="ressonance2Label" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ressonance2ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="valRes_2_re_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="valRes_2_im_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="ressonance3Label" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ressonance3ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="valRes_3_re_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="valRes_3_im_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="ressonance4Label" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ressonance4ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="valRes_4_re_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="valRes_4_im_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="ressonance5Label" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ressonance5ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="valRes_5_re_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="valRes_5_im_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="ressonance6Label" linkSize="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="ressonance6ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="valRes_6_re_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="valRes_6_im_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="finalSateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="finalStateComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="numberOfEventsLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="numberOfEventsTextField" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="seedTypeLabel" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="isGaussianLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="deltaOrGaussianComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="imaginaryOrRealLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="imaginaryOrRealComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="runRioButton" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="ressonancesLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="numberOrRessonancesSpinner" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="realLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="imaginaryLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="ressonance1Label" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="ressonance1ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="valRes_1_re_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="valRes_1_im_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="ressonance2Label" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="ressonance2ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="valRes_2_re_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="valRes_2_im_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="ressonance3Label" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="ressonance3ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="valRes_3_re_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="valRes_3_im_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="ressonance4Label" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="ressonance4ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="valRes_4_re_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="valRes_4_im_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="ressonance5Label" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="ressonance5ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="valRes_5_re_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="valRes_5_im_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="ressonance6Label" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="ressonance6ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="valRes_6_re_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="valRes_6_im_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="ressonance7Label" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="ressonance7ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -302,9 +306,7 @@
                   <Component id="valRes_12_re_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="valRes_12_im_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+              <EmptySpace pref="45" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -430,8 +432,6 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Number of Ressonances"/>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JSeparator" name="jSeparator1">
     </Component>
     <Component class="javax.swing.JSpinner" name="numberOrRessonancesSpinner">
       <Properties>
@@ -925,6 +925,13 @@
     <Component class="javax.swing.JTextField" name="valRes_12_im_TextField">
       <Properties>
         <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="2" name="/Users/valdirsalustino/Documents/git/java/RioGUI/res/images/brasao.jpg"/>
+        </Property>
       </Properties>
     </Component>
   </SubComponents>
