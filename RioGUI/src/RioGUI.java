@@ -215,7 +215,12 @@ public class RioGUI extends javax.swing.JFrame {
 
         imaginaryOrRealLabel.setText("Real and imaginary parts or as magnitude and phase? ");
 
-        imaginaryOrRealComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "magnitude", "real and imaginary" }));
+        imaginaryOrRealComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "magnitude and phase", "real and imaginary" }));
+        imaginaryOrRealComboBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                imaginaryOrRealComboBoxActionPerformed(evt);
+            }
+        });
 
         ressonancesLabel.setText("Number of Ressonances");
 
@@ -278,9 +283,9 @@ public class RioGUI extends javax.swing.JFrame {
 
         valRes_1_im_TextField.setText("0.4");
 
-        realLabel.setText("Real");
+        realLabel.setText("Magnitude");
 
-        imaginaryLabel.setText("Imaginary");
+        imaginaryLabel.setText("Phase");
 
         valRes_2_re_TextField.setText("0");
 
@@ -335,8 +340,6 @@ public class RioGUI extends javax.swing.JFrame {
         valRes_12_re_TextField.setText("0");
 
         valRes_12_im_TextField.setText("0");
-
-        jLabel3.setIcon(new javax.swing.ImageIcon("/Users/valdirsalustino/Documents/git/java/RioGUI/res/images/brasao.jpg")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -402,7 +405,7 @@ public class RioGUI extends javax.swing.JFrame {
                                     .addComponent(valRes_12_re_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(38, 38, 38)
                                 .addComponent(valRes_12_im_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(110, Short.MAX_VALUE))
+                        .addContainerGap(98, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -773,6 +776,18 @@ public class RioGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_valRes_7_im_TextFieldActionPerformed
 
+    private void imaginaryOrRealComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imaginaryOrRealComboBoxActionPerformed
+        // TODO add your handling code here:
+        if(imaginaryOrRealComboBox.getSelectedItem() == "magnitude and phase"){
+            realLabel.setText("Magnitude");
+            imaginaryLabel.setText("Phase");
+        }
+        if(imaginaryOrRealComboBox.getSelectedItem() == "real and imaginary"){
+            realLabel.setText("Real");
+            imaginaryLabel.setText("Imaginary");
+        }
+    }//GEN-LAST:event_imaginaryOrRealComboBoxActionPerformed
+
     
     private void writeRioInput(
             String rioPath,
@@ -842,11 +857,11 @@ public class RioGUI extends javax.swing.JFrame {
                 str +="Bkg_par1                                     3000 # Background mass distribution parameter 1\n";
                 str +="Bkg_par2                                     2000 # Background mass distribution parameter 2\n\n";
                 
-                str +="#Would you like the resonant coefficients to be given as real and imaginary parts or as magnitude and phase? (1 for real and imaginary pats, 0 for magnitude and phase)\n\n";
+                str +="#Would you like the resonant coefficients to be given as real and imaginary parts or as magnitude and phase? (1 for real and imaginary parts, 0 for magnitude and phase)\n\n";
                 if (realAndImaginary == "real and imaginary"){
                     str += "real_and_imaginary                      " + 1 + "\n\n";
                 }
-                else if (realAndImaginary == "magnitude"){
+                else if (realAndImaginary == "magnitude and phase"){
                     str += "real_and_imaginary                      " + 0 + "\n\n";
                 }
                 
@@ -884,8 +899,14 @@ public class RioGUI extends javax.swing.JFrame {
                         res1Name = res1Name.replace("NR","pi");
                     }
                     //name += "_re";
+                   if (realAndImaginary == "real and imaginary"){
                     str+= res1Name+"_re"+"                     " + valRes1_re + "         #real part  \n";
                     str+= res1Name+"_im"+"                     " + valRes1_im + "         #imaginary part. \n";
+                   }
+                   else if(realAndImaginary == "magnitude and phase"){
+                    str+= res1Name+"_amp"+"                     " + valRes1_re + "         #Amplitude  \n";
+                    str+= res1Name+"_phs"+"                     " + valRes1_im + "         #Phase \n";
+                   }
                 }
                 
                 if(isRes2) {
@@ -917,8 +938,14 @@ public class RioGUI extends javax.swing.JFrame {
                         res2Name = res2Name.replace("NR","pi");
                     }
                     //name += "_re";
+                   if (realAndImaginary == "real and imaginary"){
                     str+= res2Name+"_re"+"                     " + valRes2_re + "         #real part  \n";
                     str+= res2Name+"_im"+"                     " + valRes2_im + "         #imaginary part. \n";
+                   }
+                   else if(realAndImaginary == "magnitude and phase"){
+                    str+= res2Name+"_amp"+"                     " + valRes2_re + "         #Amplitude  \n";
+                    str+= res2Name+"_phs"+"                     " + valRes2_im + "         #Phase \n";
+                   }
                 }
                 
                 if(isRes3) {
@@ -950,8 +977,14 @@ public class RioGUI extends javax.swing.JFrame {
                         res3Name = res3Name.replace("NR","pi");
                     }
                     //name += "_re";
+                   if (realAndImaginary == "real and imaginary"){
                     str+= res3Name+"_re"+"                     " + valRes3_re + "         #real part  \n";
                     str+= res3Name+"_im"+"                     " + valRes3_im + "         #imaginary part. \n";
+                   }
+                   else if(realAndImaginary == "magnitude and phase"){
+                    str+= res3Name+"_amp"+"                     " + valRes3_re + "         #Amplitude  \n";
+                    str+= res3Name+"_phs"+"                     " + valRes3_im + "         #Phase \n";
+                   }
                 }
                 if(isRes4) {
                     str+="############################################################################################################\n";
@@ -982,8 +1015,14 @@ public class RioGUI extends javax.swing.JFrame {
                         res4Name = res4Name.replace("NR","pi");
                     }
                     //name += "_re";
+                   if (realAndImaginary == "real and imaginary"){
                     str+= res4Name+"_re"+"                     " + valRes4_re + "         #real part  \n";
                     str+= res4Name+"_im"+"                     " + valRes4_im + "         #imaginary part. \n";
+                   }
+                   else if(realAndImaginary == "magnitude and phase"){
+                    str+= res4Name+"_amp"+"                     " + valRes4_re + "         #Amplitude  \n";
+                    str+= res4Name+"_phs"+"                     " + valRes4_im + "         #Phase \n";
+                   }
                 }
                 if(isRes5) {
                     str+="############################################################################################################\n";
@@ -1014,8 +1053,14 @@ public class RioGUI extends javax.swing.JFrame {
                         res5Name = res5Name.replace("NR","pi");
                     }
                     //name += "_re";
+                   if (realAndImaginary == "real and imaginary"){
                     str+= res5Name+"_re"+"                     " + valRes5_re + "         #real part  \n";
                     str+= res5Name+"_im"+"                     " + valRes5_im + "         #imaginary part. \n";
+                   }
+                   else if(realAndImaginary == "magnitude and phase"){
+                    str+= res5Name+"_amp"+"                     " + valRes5_re + "         #Amplitude  \n";
+                    str+= res5Name+"_phs"+"                     " + valRes5_im + "         #Phase \n";
+                   }
                 }
                 if(isRes6) {
                     str+="############################################################################################################\n";
@@ -1046,8 +1091,14 @@ public class RioGUI extends javax.swing.JFrame {
                         res6Name = res6Name.replace("NR","pi");
                     }
                     //name += "_re";
+                   if (realAndImaginary == "real and imaginary"){
                     str+= res6Name+"_re"+"                     " + valRes6_re + "         #real part  \n";
                     str+= res6Name+"_im"+"                     " + valRes6_im + "         #imaginary part. \n";
+                   }
+                   else if(realAndImaginary == "magnitude and phase"){
+                    str+= res6Name+"_amp"+"                     " + valRes6_re + "         #Amplitude  \n";
+                    str+= res6Name+"_phs"+"                     " + valRes6_im + "         #Phase \n";
+                   }
                 }
                 if(isRes7) {
                     str+="############################################################################################################\n";
@@ -1078,8 +1129,14 @@ public class RioGUI extends javax.swing.JFrame {
                         res7Name = res7Name.replace("NR","pi");
                     }
                     //name += "_re";
+                   if (realAndImaginary == "real and imaginary"){
                     str+= res7Name+"_re"+"                     " + valRes7_re + "         #real part  \n";
                     str+= res7Name+"_im"+"                     " + valRes7_im + "         #imaginary part. \n";
+                   }
+                   else if(realAndImaginary == "magnitude and phase"){
+                    str+= res7Name+"_amp"+"                     " + valRes7_re + "         #Amplitude  \n";
+                    str+= res7Name+"_phs"+"                     " + valRes7_im + "         #Phase \n";
+                   }
                 }
                 if(isRes8) {
                     str+="############################################################################################################\n";
@@ -1110,8 +1167,14 @@ public class RioGUI extends javax.swing.JFrame {
                         res8Name = res8Name.replace("NR","pi");
                     }
                     //name += "_re";
+                   if (realAndImaginary == "real and imaginary"){
                     str+= res8Name+"_re"+"                     " + valRes8_re + "         #real part  \n";
                     str+= res8Name+"_im"+"                     " + valRes8_im + "         #imaginary part. \n";
+                   }
+                   else if(realAndImaginary == "magnitude and phase"){
+                    str+= res8Name+"_amp"+"                     " + valRes8_re + "         #Amplitude  \n";
+                    str+= res8Name+"_phs"+"                     " + valRes8_im + "         #Phase \n";
+                   }
                 }
                 if(isRes9) {
                     str+="############################################################################################################\n";
@@ -1142,8 +1205,14 @@ public class RioGUI extends javax.swing.JFrame {
                         res9Name = res9Name.replace("NR","pi");
                     }
                     //name += "_re";
+                   if (realAndImaginary == "real and imaginary"){
                     str+= res9Name+"_re"+"                     " + valRes9_re + "         #real part  \n";
                     str+= res9Name+"_im"+"                     " + valRes9_im + "         #imaginary part. \n";
+                   }
+                   else if(realAndImaginary == "magnitude and phase"){
+                    str+= res9Name+"_amp"+"                     " + valRes9_re + "         #Amplitude  \n";
+                    str+= res9Name+"_phs"+"                     " + valRes9_im + "         #Phase \n";
+                   }
                 }
                 if(isRes10) {
                     str+="############################################################################################################\n";
@@ -1174,8 +1243,14 @@ public class RioGUI extends javax.swing.JFrame {
                         res10Name = res10Name.replace("NR","pi");
                     }
                     //name += "_re";
+                   if (realAndImaginary == "real and imaginary"){
                     str+= res10Name+"_re"+"                     " + valRes10_re + "         #real part  \n";
                     str+= res10Name+"_im"+"                     " + valRes10_im + "         #imaginary part. \n";
+                   }
+                   else if(realAndImaginary == "magnitude and phase"){
+                    str+= res10Name+"_amp"+"                     " + valRes10_re + "         #Amplitude  \n";
+                    str+= res10Name+"_phs"+"                     " + valRes10_im + "         #Phase \n";
+                   }
                 }
                 if(isRes11) {
                     str+="############################################################################################################\n";
@@ -1206,8 +1281,14 @@ public class RioGUI extends javax.swing.JFrame {
                         res11Name = res11Name.replace("NR","pi");
                     }
                     //name += "_re";
+                   if (realAndImaginary == "real and imaginary"){
                     str+= res11Name+"_re"+"                     " + valRes11_re + "         #real part  \n";
                     str+= res11Name+"_im"+"                     " + valRes11_im + "         #imaginary part. \n";
+                   }
+                   else if(realAndImaginary == "magnitude and phase"){
+                    str+= res11Name+"_amp"+"                     " + valRes11_re + "         #Amplitude  \n";
+                    str+= res11Name+"_phs"+"                     " + valRes11_im + "         #Phase \n";
+                   }
                 }
                 if(isRes12) {
                     str+="############################################################################################################\n";
@@ -1238,8 +1319,14 @@ public class RioGUI extends javax.swing.JFrame {
                         res12Name = res12Name.replace("NR","pi");
                     }
                     //name += "_re";
+                   if (realAndImaginary == "real and imaginary"){
                     str+= res12Name+"_re"+"                     " + valRes12_re + "         #real part  \n";
                     str+= res12Name+"_im"+"                     " + valRes12_im + "         #imaginary part. \n";
+                   }
+                   else if(realAndImaginary == "magnitude and phase"){
+                    str+= res12Name+"_amp"+"                     " + valRes12_re + "         #Amplitude  \n";
+                    str+= res12Name+"_phs"+"                     " + valRes12_im + "         #Phase \n";
+                   }
                 }
                 str+="############################################################################################################\n\n";
                 
