@@ -15,12 +15,12 @@
 #                                                 #
 ###################################################
 
-Reading input file name:/Users/valdirsalustino/Documents/git/Rio/Rio/toy/ainputs/InputFileFromRioGUI.txt
-Output file name: /Users/valdirsalustino/Documents/git/Rio/Rio/toy/aroot_files/outputTest
+Reading input file name:/Users/valdirsalustino/cernbox/Rio+/Rio+//toy/ainputs/InputFileFromRioGUI.txt
+Output file name: /Users/valdirsalustino/cernbox/Rio+/Rio+//toy/aroot_files/test_sigma_RioGui
 
 ------------------------------------------------------------------------
 
-Number of events to be generated: 10000
+Number of events to be generated: 250000
 
 ------------------------------------------------------------------------
 
@@ -38,10 +38,10 @@ The chosen final state was pipipi
 Signal generation parameters: 
 
 ##########################################################
-Resonant Channel    Real Part      Imaginary Part 
+Resonant Channel    Magnitude      Phase (degrees)
 ##########################################################
-f0980+pi            0.2            0.4            
-rho+pi              0.5            0.3            
+rho+pi              1              0              
+sigma+pi            0.2            90             
 ##########################################################
 
 2 resonances in total
@@ -76,18 +76,30 @@ Background fraction: 0
 
 Calculating Bkg normalization
 
-BkgNorm took 0.000997s
+BkgNorm took 0.000802s
 ------------------------------------------------------------------------
 
 Calculating the signal PDF maximum
 
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 1 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+ MINUIT WARNING IN HESSE   
+ ============== Negative diagonal element 1 in Error Matrix
+ MINUIT WARNING IN HESSE   
+ ============== 1.5949 added to diagonal of error matrix
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -8.0007e-02  2.0800e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.082087 TO DIAGONAL.
 ------------------------------------------------------------------------
 
-Maximum of signal PDF: 1.89592  0.562053   0.562026
+Maximum of signal PDF: 3.19417  2.83977   0.568303
 Maximum of background PDF: 0
 
-Generating sample number 0 - 10%    Generating sample number 0 - 20%    Generating sample number 0 - 30%    Generating sample number 0 - 40%    Generating sample number 0 - 50%    Generating sample number 0 - 60%    Generating sample number 0 - 70%    Generating sample number 0 - 80%    Generating sample number 0 - 90%    Generated  sample number 0 - 100%        
+Generating sample number 0 - 0.4%    Generating sample number 0 - 0.8%    Generating sample number 0 - 1.2%    Generating sample number 0 - 1.6%    Generating sample number 0 - 2%    Generating sample number 0 - 2.4%    Generating sample number 0 - 2.8%    Generating sample number 0 - 3.2%    Generating sample number 0 - 3.6%    Generating sample number 0 - 4%    Generating sample number 0 - 4.4%    Generating sample number 0 - 4.8%    Generating sample number 0 - 5.2%    Generating sample number 0 - 5.6%    Generating sample number 0 - 6%    Generating sample number 0 - 6.4%    Generating sample number 0 - 6.8%    Generating sample number 0 - 7.2%    Generating sample number 0 - 7.6%    Generating sample number 0 - 8%    Generating sample number 0 - 8.4%    Generating sample number 0 - 8.8%    Generating sample number 0 - 9.2%    Generating sample number 0 - 9.6%    Generating sample number 0 - 10%    Generating sample number 0 - 10.4%    Generating sample number 0 - 10.8%    Generating sample number 0 - 11.2%    Generating sample number 0 - 11.6%    Generating sample number 0 - 12%    Generating sample number 0 - 12.4%    Generating sample number 0 - 12.8%    Generating sample number 0 - 13.2%    Generating sample number 0 - 13.6%    Generating sample number 0 - 14%    Generating sample number 0 - 14.4%    Generating sample number 0 - 14.8%    Generating sample number 0 - 15.2%    Generating sample number 0 - 15.6%    Generating sample number 0 - 16%    Generating sample number 0 - 16.4%    Generating sample number 0 - 16.8%    Generating sample number 0 - 17.2%    Generating sample number 0 - 17.6%    Generating sample number 0 - 18%    Generating sample number 0 - 18.4%    Generating sample number 0 - 18.8%    Generating sample number 0 - 19.2%    Generating sample number 0 - 19.6%    Generating sample number 0 - 20%    Generating sample number 0 - 20.4%    Generating sample number 0 - 20.8%    Generating sample number 0 - 21.2%    Generating sample number 0 - 21.6%    Generating sample number 0 - 22%    Generating sample number 0 - 22.4%    Generating sample number 0 - 22.8%    Generating sample number 0 - 23.2%    Generating sample number 0 - 23.6%    Generating sample number 0 - 24%    Generating sample number 0 - 24.4%    Generating sample number 0 - 24.8%    Generating sample number 0 - 25.2%    Generating sample number 0 - 25.6%    Generating sample number 0 - 26%    Generating sample number 0 - 26.4%    Generating sample number 0 - 26.8%    Generating sample number 0 - 27.2%    Generating sample number 0 - 27.6%    Generating sample number 0 - 28%    Generating sample number 0 - 28.4%    Generating sample number 0 - 28.8%    Generating sample number 0 - 29.2%    Generating sample number 0 - 29.6%    Generating sample number 0 - 30%    Generating sample number 0 - 30.4%    Generating sample number 0 - 30.8%    Generating sample number 0 - 31.2%    Generating sample number 0 - 31.6%    Generating sample number 0 - 32%    Generating sample number 0 - 32.4%    Generating sample number 0 - 32.8%    Generating sample number 0 - 33.2%    Generating sample number 0 - 33.6%    Generating sample number 0 - 34%    Generating sample number 0 - 34.4%    Generating sample number 0 - 34.8%    Generating sample number 0 - 35.2%    Generating sample number 0 - 35.6%    Generating sample number 0 - 36%    Generating sample number 0 - 36.4%    Generating sample number 0 - 36.8%    Generating sample number 0 - 37.2%    Generating sample number 0 - 37.6%    Generating sample number 0 - 38%    Generating sample number 0 - 38.4%    Generating sample number 0 - 38.8%    Generating sample number 0 - 39.2%    Generating sample number 0 - 39.6%    Generating sample number 0 - 40%    Generating sample number 0 - 40.4%    Generating sample number 0 - 40.8%    Generating sample number 0 - 41.2%    Generating sample number 0 - 41.6%    Generating sample number 0 - 42%    Generating sample number 0 - 42.4%    Generating sample number 0 - 42.8%    Generating sample number 0 - 43.2%    Generating sample number 0 - 43.6%    Generating sample number 0 - 44%    Generating sample number 0 - 44.4%    Generating sample number 0 - 44.8%    Generating sample number 0 - 45.2%    Generating sample number 0 - 45.6%    Generating sample number 0 - 46%    Generating sample number 0 - 46.4%    Generating sample number 0 - 46.8%    Generating sample number 0 - 47.2%    Generating sample number 0 - 47.6%    Generating sample number 0 - 48%    Generating sample number 0 - 48.4%    Generating sample number 0 - 48.8%    Generating sample number 0 - 49.2%    Generating sample number 0 - 49.6%    Generating sample number 0 - 50%    Generating sample number 0 - 50.4%    Generating sample number 0 - 50.8%    Generating sample number 0 - 51.2%    Generating sample number 0 - 51.6%    Generating sample number 0 - 52%    Generating sample number 0 - 52.4%    Generating sample number 0 - 52.8%    Generating sample number 0 - 53.2%    Generating sample number 0 - 53.6%    Generating sample number 0 - 54%    Generating sample number 0 - 54.4%    Generating sample number 0 - 54.8%    Generating sample number 0 - 55.2%    Generating sample number 0 - 55.6%    Generating sample number 0 - 56%    Generating sample number 0 - 56.4%    Generating sample number 0 - 56.8%    Generating sample number 0 - 57.2%    Generating sample number 0 - 57.6%    Generating sample number 0 - 58%    Generating sample number 0 - 58.4%    Generating sample number 0 - 58.8%    Generating sample number 0 - 59.2%    Generating sample number 0 - 59.6%    Generating sample number 0 - 60%    Generating sample number 0 - 60.4%    Generating sample number 0 - 60.8%    Generating sample number 0 - 61.2%    Generating sample number 0 - 61.6%    Generating sample number 0 - 62%    Generating sample number 0 - 62.4%    Generating sample number 0 - 62.8%    Generating sample number 0 - 63.2%    Generating sample number 0 - 63.6%    Generating sample number 0 - 64%    Generating sample number 0 - 64.4%    Generating sample number 0 - 64.8%    Generating sample number 0 - 65.2%    Generating sample number 0 - 65.6%    Generating sample number 0 - 66%    Generating sample number 0 - 66.4%    Generating sample number 0 - 66.8%    Generating sample number 0 - 67.2%    Generating sample number 0 - 67.6%    Generating sample number 0 - 68%    Generating sample number 0 - 68.4%    Generating sample number 0 - 68.8%    Generating sample number 0 - 69.2%    Generating sample number 0 - 69.6%    Generating sample number 0 - 70%    Generating sample number 0 - 70.4%    Generating sample number 0 - 70.8%    Generating sample number 0 - 71.2%    Generating sample number 0 - 71.6%    Generating sample number 0 - 72%    Generating sample number 0 - 72.4%    Generating sample number 0 - 72.8%    Generating sample number 0 - 73.2%    Generating sample number 0 - 73.6%    Generating sample number 0 - 74%    Generating sample number 0 - 74.4%    Generating sample number 0 - 74.8%    Generating sample number 0 - 75.2%    Generating sample number 0 - 75.6%    Generating sample number 0 - 76%    Generating sample number 0 - 76.4%    Generating sample number 0 - 76.8%    Generating sample number 0 - 77.2%    Generating sample number 0 - 77.6%    Generating sample number 0 - 78%    Generating sample number 0 - 78.4%    Generating sample number 0 - 78.8%    Generating sample number 0 - 79.2%    Generating sample number 0 - 79.6%    Generating sample number 0 - 80%    Generating sample number 0 - 80.4%    Generating sample number 0 - 80.8%    Generating sample number 0 - 81.2%    Generating sample number 0 - 81.6%    Generating sample number 0 - 82%    Generating sample number 0 - 82.4%    Generating sample number 0 - 82.8%    Generating sample number 0 - 83.2%    Generating sample number 0 - 83.6%    Generating sample number 0 - 84%    Generating sample number 0 - 84.4%    Generating sample number 0 - 84.8%    Generating sample number 0 - 85.2%    Generating sample number 0 - 85.6%    Generating sample number 0 - 86%    Generating sample number 0 - 86.4%    Generating sample number 0 - 86.8%    Generating sample number 0 - 87.2%    Generating sample number 0 - 87.6%    Generating sample number 0 - 88%    Generating sample number 0 - 88.4%    Generating sample number 0 - 88.8%    Generating sample number 0 - 89.2%    Generating sample number 0 - 89.6%    Generating sample number 0 - 90%    Generating sample number 0 - 90.4%    Generating sample number 0 - 90.8%    Generating sample number 0 - 91.2%    Generating sample number 0 - 91.6%    Generating sample number 0 - 92%    Generating sample number 0 - 92.4%    Generating sample number 0 - 92.8%    Generating sample number 0 - 93.2%    Generating sample number 0 - 93.6%    Generating sample number 0 - 94%    Generating sample number 0 - 94.4%    Generating sample number 0 - 94.8%    Generating sample number 0 - 95.2%    Generating sample number 0 - 95.6%    Generating sample number 0 - 96%    Generating sample number 0 - 96.4%    Generating sample number 0 - 96.8%    Generating sample number 0 - 97.2%    Generating sample number 0 - 97.6%    Generating sample number 0 - 98%    Generating sample number 0 - 98.4%    Generating sample number 0 - 98.8%    Generating sample number 0 - 99.2%    Generating sample number 0 - 99.6%    Generated  sample number 0 - 100%        
 
-Number of signal events generated in this sample: 10000
+Number of signal events generated in this sample: 250000
 Number of background events generated in this sample: 0
 
